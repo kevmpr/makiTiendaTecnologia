@@ -1,0 +1,40 @@
+/*----------Variables----------*/
+:root {
+  /*fuente*/
+  --fuenteHeading: ;
+  --fuenteParrafo: ;
+  /*color*/
+  --blanco: #ffffff;
+  --gris: #888888;
+  --negro: #000000;
+  --primario: ;
+  --primarioOSCURO: ;
+  --secundario: ;
+  --secundarioOSCURO: ;
+}
+
+/*----------Configuraciones globales----------*/
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /*ahora 1rem = 10px*/
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+*::selection {
+  background-color: var(--negro);
+  color: var(--primario);
+}
+
+body {
+  font-family: var(--fuenteParrafo);
+  font-size: 1.6rem;
+  line-height: 2;
+  background-color: var(--blanco);
+  margin: 0;
+  padding: 0;
+}
