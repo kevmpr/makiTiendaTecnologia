@@ -50,8 +50,6 @@ body {
 
   display: grid;
   grid-template-rows: 3 (auto);
-
-  max-width: 100vw !important;
 }
 
 h1 {
@@ -93,7 +91,8 @@ input:focus {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  padding: 0 2rem;
+  width: 100vw;
   background-color: var(--negro);
 }
 
@@ -120,7 +119,7 @@ input:focus {
 }
 
 .input__search {
-  width: 80%;
+  width: 70%;
   border-radius: 10px;
 }
 
@@ -195,7 +194,7 @@ input:focus {
 
 .banner__img {
   background-image: url(../assets/img/bannerHeader.webp);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   box-shadow: 0 0.3rem 1.2rem rgba(0, 0, 0, 0.3);
   opacity: 1;
@@ -243,7 +242,7 @@ input:focus {
   align-items: center;
   gap: 3rem;
 
-  width: 100%;
+  width: 100vw;
 }
 
 .footer__socialmedia {
@@ -341,4 +340,38 @@ a.footer__medialinks {
   display: flex;
   gap: 1rem;
 }
-/*--------------------------------------------------------------INICIOSESION.HTML--------------------------------------------------------------*/
+/*--------------------------------------------------------------REGISTRO.HTML--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------SOBRENOSOTROS.HTML--------------------------------------------------------------*/
+.main__containerUs{
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titulo__us{
+  border-bottom: 0.3rem solid var(--secundario);
+  border-radius: 5px;
+}
+
+.article__container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8rem;
+  margin-top: 2rem;
+}
+
+.article__div{
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.article__img{
+  width: 100%;
+  box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.3);
+  margin: 1rem;
+}
+/*--------------------------------------------------------------SOBRENOSOTROS.HTML--------------------------------------------------------------*/
