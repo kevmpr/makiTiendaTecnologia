@@ -482,3 +482,127 @@ a.footer__medialinks {
   align-items: center;
 }
 /*--------------------------------------------------------------CARRITO.HTML--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------COMPUTACION---------------------------------------------------------------------*/
+
+.conteiner_main{
+  display: flex; 
+  flex-direction: column;
+  text-align: center;
+  overflow-x: hidden;
+  justify-content:space-between;
+  }
+
+  .filtros_div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding:2rem;
+    margin: 10px 40px ;
+  }
+
+  .contenedor_productos{
+    display: flex; 
+    flex-direction: column;
+    text-align: center;
+    overflow-x: hidden;
+    justify-content:space-between;
+  }
+
+  .producto_compu{
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  padding: 2rem;
+  }
+
+  @media  (min-width: 1024px) {
+    .producto_compu{
+   display: inline;
+    }
+  }
+  /*--------------------------------------------------------------COMPUTACION---------------------------------------------------------------------*/
+  
+  /*----------------------------------------------------------------MOVILES-----------------------------------------------------------------------*/
+
+  
+.conteiner_movil{
+  display: flex; 
+  flex-direction: column;
+  text-align: center;
+  overflow-x: hidden;
+  justify-content:space-between;
+  }
+
+  .filtros_movil{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding:2rem;
+    margin: 10px 40px ;
+  }
+
+  .productos_moviles{
+    display: flex; 
+    flex-direction: column;
+    text-align: center;
+    overflow-x: hidden;
+    justify-content:space-between;
+  }
+
+  .movil{
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  padding: 2rem;
+  }
+
+  @media  (min-width: 1024px) {
+    .movil{
+   display: inline;
+    }
+  }
+   /*----------------------------------------------------------------MOVILES-----------------------------------------------------------------------*/
+
+  /*----------------------------------------------------------------MOVILES-----------------------------------------------------------------------*/
+ 
+  
+.conteiner_tv{
+  display: flex; 
+  flex-direction: column;
+  text-align: center;
+  overflow-x: hidden;
+  justify-content:space-between;
+  }
+
+  .filtros_tv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding:2rem;
+    margin: 10px 40px ;
+  }
+
+  .productos_tv{
+    display: flex; 
+    flex-direction: column;
+    text-align: center;
+    overflow-x: hidden;
+    justify-content:space-between;
+  }
+
+  .tv{
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  padding: 2rem;
+  }
+
+  @media  (min-width: 1024px) {
+    .tv{
+   display: inline;
+    }
+  }
