@@ -177,8 +177,48 @@ input:focus {
   width: 2.5rem;
 }
 
+/*-------------------------------------------------FOOTER-------------------------------------------------*/
+.footer__container {
+  grid-row: 3 / 4;
+  background-color: var(--negro);
+  color: var(--blanco);
+  padding: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+
+  width: 100vw;
+}
+
+.footer__socialmedia {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  order: 2;
+}
+
+.footer__info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  order: 3;
+}
+
+a.footer__medialinks {
+  color: var(--secundario) !important;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer__p {
+  color: var(--secundario);
+  padding-top: 2rem;
+}
+
 /*--------------------------------------------------------------INDEX.HTML--------------------------------------------------------------*/
-/*-------------------------------------------------MAIN-------------------------------------------------*/
 .main__containerIndex {
   grid-row: 2 / 3;
 
@@ -229,46 +269,6 @@ input:focus {
 }
 /*--------------------------------------------------------------INDEX.HTML--------------------------------------------------------------*/
 
-/*-------------------------------------------------FOOTER-------------------------------------------------*/
-.footer__container {
-  grid-row: 3 / 4;
-  background-color: var(--negro);
-  color: var(--blanco);
-  padding: 2rem;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 3rem;
-
-  width: 100vw;
-}
-
-.footer__socialmedia {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  order: 2;
-}
-
-.footer__info {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  order: 3;
-}
-
-a.footer__medialinks {
-  color: var(--secundario) !important;
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.footer__p {
-  color: var(--secundario);
-  padding-top: 2rem;
-}
 /*--------------------------------------------------------------INICIOSESION.HTML--------------------------------------------------------------*/
 .main_containerIS {
   padding: 2rem;
