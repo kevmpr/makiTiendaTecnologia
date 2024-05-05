@@ -19,7 +19,6 @@
   --negro: #191825;
   --primario: #865dff;
   --secundario: #e384ff;
-  --terciario: #ffa3fd;
 }
 
 /*----------Configuraciones globales----------*/
@@ -343,19 +342,19 @@ a.footer__medialinks {
 /*--------------------------------------------------------------REGISTRO.HTML--------------------------------------------------------------*/
 
 /*--------------------------------------------------------------SOBRENOSOTROS.HTML--------------------------------------------------------------*/
-.main__containerUs{
+.main__containerUs {
   padding: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.titulo__us{
+.titulo__us {
   border-bottom: 0.3rem solid var(--secundario);
   border-radius: 5px;
 }
 
-.article__container{
+.article__container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -363,15 +362,123 @@ a.footer__medialinks {
   margin-top: 2rem;
 }
 
-.article__div{
+.article__div {
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
 }
 
-.article__img{
+.article__img {
   width: 100%;
   box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.3);
   margin: 1rem;
 }
 /*--------------------------------------------------------------SOBRENOSOTROS.HTML--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------CARRITO.HTML--------------------------------------------------------------*/
+.main__containerCart {
+  width: 100vw;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.carritos {
+  padding: 2rem;
+  max-width: 100%;
+}
+
+.carrito__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.carrito {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr auto auto;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 10rem;
+}
+
+.img__carrito {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  width: 100%;
+  height: auto;
+}
+
+.info__containerCarrito {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cantidad___carrito {
+  display: flex;
+}
+
+.input__carrito {
+  width: 5rem;
+  height: 3rem;
+  text-align: center;
+  border: 0.1rem solid var(--gris);
+  margin: 0 1rem;
+}
+
+.borrar_producto {
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.finalizarCompra {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.envio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titulo__compra {
+  border-bottom: 0.5rem solid var(--secundario);
+  border-radius: 5px;
+  margin-bottom: 2rem;
+  width: auto;
+}
+
+.codigoPostal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.finalizar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.total{
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/*--------------------------------------------------------------CARRITO.HTML--------------------------------------------------------------*/
