@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="../css/style.css" type="text/css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -12,7 +12,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
     />
-    <link rel="icon" type="image/icon" href="../assets/icon/logoMaki.ico"/>
+    <link rel="icon" type="image/icon" href="../assets/icon/logoMaki.ico" />
     <title>Registrarse</title>
   </head>
   <body>
@@ -25,6 +25,7 @@
       <div class="nav__container">
         <!--nav-->
         <nav class="nav">
+          <!--nav para celulares y tablets-->
           <div class="dropdown">
             <button
               class="btn btn-secondary dropdown-toggle"
@@ -59,6 +60,25 @@
               </li>
             </ul>
           </div>
+          <!--nav para celulares y tablets-->
+
+          <!--nav para pc-->
+          <div class="nav__pc">
+            <a class="nav__pc__enlaces" href="./tv_audio.html"
+              >TV & Audio</a
+            >
+
+            <a class="nav__pc__enlaces" href="./computacion.html"
+              >Computación</a
+            >
+
+            <a class="nav__pc__enlaces" href="./moviles.html">Moviles</a>
+
+            <a class="nav__pc__enlaces" href="./sobreNosotros.html">
+              Sobre nosotros</a
+            >
+          </div>
+          <!--nav para pc-->
         </nav>
         <!--nav-->
 
@@ -66,6 +86,7 @@
         <div class="search__container">
           <label for="search"
             ><svg
+              class="icoSize"
               xmlns="http://www.w3.org/2000/svg"
               width="30"
               height="30"
@@ -84,28 +105,28 @@
             id="search"
           />
         </div>
-        <!--Buscador-->
+        <!--Buscador--> 
 
         <!--carrito/usuario-->
-        <div class="config__items">
+        <div class="carritoUsuario">
           <a href="./inicioSesion.html"
             ><svg
+              class="icoSize"
               xmlns="http://www.w3.org/2000/svg"
               width="30"
               height="30"
               viewBox="0 0 24 24"
-              style="fill: #865dff"
+              style="fill: #ffffff"
             >
               <path
                 d="M12 2a5 5 0 1 0 5 5 5 5 0 0 0-5-5zm0 8a3 3 0 1 1 3-3 3 3 0 0 1-3 3zm9 11v-1a7 7 0 0 0-7-7h-4a7 7 0 0 0-7 7v1h2v-1a5 5 0 0 1 5-5h4a5 5 0 0 1 5 5v1z"
               ></path>
             </svg>
           </a>
-        </div>
 
-        <div class="config__items">
           <a href="./carrito.html">
             <svg
+              class="icoSize"
               xmlns="http://www.w3.org/2000/svg"
               width="30"
               height="30"
@@ -127,63 +148,77 @@
 
     <!--MAIN-->
     <main class="main_containerIS">
-        <h1>Rellene los datos</h1>
+      <h1>Rellene los datos</h1>
 
-        <form class="form" action="#">
-          <div class="input__container">
-            <label for="nombre">Nombre</label>
-            <input class="input" type="text" id="nombre" autocomplete="name" required/>
-          </div>
-
-          <div class="input__container">
-            <label for="apellido">Apellido</label>
-            <input class="input" type="text" id="apellido" required/>
-          </div>
-
-          <div class="input__container">
-            <label for="tel">Telefono</label>
-            <input class="input" type="tel" id="tel" autocomplete="tel"/>
-          </div>
-
-          <div class="input__container">
-            <label for="email">Email</label>
-            <input class="input" type="email" id="email" autocomplete="email" required/>
-          </div>
-
-          <div class="input__container">
-            <label for="password">Contraseña</label>
-            <input class="input" type="password" id="password" required/>
-          </div>
-
-          <div class="terms__container">
-            <div class="terms">
-              <input type="checkbox" id="terms" required/><label for="terms"
-                >Aceptar terminos y condiciones</label
-              >
-            </div>
-
-            <div class="terms">
-              <input type="checkbox" id="news"/><label for="news"
-                >Aceptar recibir novedades y promociones</label
-              >
-            </div>
-          </div>
-
-          <input class="myButton" type="submit" value="Registrar" />
-          <!--Esto debe ser un <button>, use un <a> para que tenga funcionalidad-->
-        </form>
-
-        <div class="alternativa__container">
-          <p>¿Ya tiene una cuenta?</p>
-          <a class="alternativa__enlace" href="./inicioSesion.html">Iniciar sesión</a>
+      <form class="form" action="#">
+        <div class="input__container">
+          <label for="nombre">Nombre</label>
+          <input
+            class="input"
+            type="text"
+            id="nombre"
+            autocomplete="name"
+            required
+          />
         </div>
+
+        <div class="input__container">
+          <label for="apellido">Apellido</label>
+          <input class="input" type="text" id="apellido" required />
+        </div>
+
+        <div class="input__container">
+          <label for="tel">Telefono</label>
+          <input class="input" type="tel" id="tel" autocomplete="tel" />
+        </div>
+
+        <div class="input__container">
+          <label for="email">Email</label>
+          <input
+            class="input"
+            type="email"
+            id="email"
+            autocomplete="email"
+            required
+          />
+        </div>
+
+        <div class="input__container">
+          <label for="password">Contraseña</label>
+          <input class="input" type="password" id="password" required />
+        </div>
+
+        <div class="terms__container">
+          <div class="terms">
+            <input type="checkbox" id="terms" required /><label for="terms"
+              >Aceptar terminos y condiciones</label
+            >
+          </div>
+
+          <div class="terms">
+            <input type="checkbox" id="news" /><label for="news"
+              >Aceptar recibir novedades y promociones</label
+            >
+          </div>
+        </div>
+
+        <input class="myButton" type="submit" value="Registrar" />
+        <!--Esto debe ser un <button>, use un <a> para que tenga funcionalidad-->
+      </form>
+
+      <div class="alternativa__container">
+        <p>¿Ya tiene una cuenta?</p>
+        <a class="alternativa__enlace" href="./inicioSesion.html"
+          >Iniciar sesión</a
+        >
+      </div>
     </main>
     <!--MAIN-->
 
     <!--FOOTER-->
     <footer class="footer__container">
       <!--foooter_izquierda-->
-      <a class="header__logo" href="./index.html">Maki</a>
+      <a class="header__logo" href="../index.html">Maki</a>
 
       <div class="footer__socialmedia">
         <!--instagram-->
@@ -192,6 +227,7 @@
           href="https://www.instagram.com/programacodoacodo/?hl=es"
           target="_blank"
           ><svg
+            class="icoSize"
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"
@@ -216,6 +252,7 @@
           href="https://www.facebook.com/groups/135322965179495/?_rdr"
           target="_blank"
           ><svg
+            class="icoSize"
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"
@@ -237,7 +274,7 @@
           target="_blank"
           ><svg
             xmlns="http://www.w3.org/2000/svg"
-            class="icon icon-tabler icon-tabler-brand-x"
+            class="icon icon-tabler icon-tabler-brand-x icoSize"
             width="22"
             height="22"
             viewBox="0 0 24 24"
@@ -254,15 +291,13 @@
           X</a
         >
         <!--x-->
-
-        <p class="footer__p">hecho en Argentina</p>
       </div>
+      <p class="footer__p">by grupo14</p>
       <!--foooter_izquierda-->
 
       <!--foooter_derecha-->
       <div class="footer__info">
-        <p>© 2024 Maki <br /></p>
-        <br />
+        <p>© 2024 Maki</p>
         <p>Politica de privacidad</p>
         <p>Accesibilidad</p>
         <p>Terminos y condiciones</p>

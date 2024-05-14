@@ -25,6 +25,7 @@
       <div class="nav__container">
         <!--nav-->
         <nav class="nav">
+          <!--nav para celulares y tablets-->
           <div class="dropdown">
             <button
               class="btn btn-secondary dropdown-toggle"
@@ -35,7 +36,9 @@
             <ul class="dropdown-menu">
               <li class="nav__list">
                 <span class="material-symbols-outlined"> tv_gen </span
-                ><a class="dropdown-item" href="./tv_audio.html">TV y audio</a>
+                ><a class="dropdown-item" href="./tv_audio.html"
+                  >TV y audio</a
+                >
               </li>
               <li class="nav__list">
                 <span class="material-symbols-outlined"> computer </span
@@ -45,16 +48,37 @@
               </li>
               <li class="nav__list">
                 <span class="material-symbols-outlined"> phone_android </span
-                ><a class="dropdown-item" href="./moviles.html">Moviles</a>
+                ><a class="dropdown-item" href="./moviles.html"
+                  >Moviles</a
+                >
               </li>
               <li class="nav__list">
-                <span class="material-symbols-outlined"> groups </span
-                ><a class="dropdown-item" href="./sobreNosotros.html"
+                <span class="material-symbols-outlined material-symbols-outlinedActive"> groups </span
+                ><a class="dropdown-item nav__pc__enlacesActive" href="./sobreNosotros.html"
                   >Sobre nosotros</a
                 >
               </li>
             </ul>
           </div>
+          <!--nav para celulares y tablets-->
+
+          <!--nav para pc-->
+          <div class="nav__pc">
+            <a class="nav__pc__enlaces" href="./tv_audio.html"
+              >TV & Audio</a
+            >
+
+            <a class="nav__pc__enlaces" href="./computacion.html"
+              >Computación</a
+            >
+
+            <a class="nav__pc__enlaces" href="./moviles.html">Moviles</a>
+
+            <a class="nav__pc__enlaces nav__pc__enlacesActive" href="./sobreNosotros.html">
+              Sobre nosotros</a
+            >
+          </div>
+          <!--nav para pc-->
         </nav>
         <!--nav-->
 
@@ -62,6 +86,7 @@
         <div class="search__container">
           <label for="search"
             ><svg
+              class="icoSize"
               xmlns="http://www.w3.org/2000/svg"
               width="30"
               height="30"
@@ -80,12 +105,13 @@
             id="search"
           />
         </div>
-        <!--Buscador-->
+        <!--Buscador--> 
 
         <!--carrito/usuario-->
-        <div class="config__items">
+        <div class="carritoUsuario">
           <a href="./inicioSesion.html"
             ><svg
+              class="icoSize"
               xmlns="http://www.w3.org/2000/svg"
               width="30"
               height="30"
@@ -97,11 +123,10 @@
               ></path>
             </svg>
           </a>
-        </div>
 
-        <div class="config__items">
           <a href="./carrito.html">
             <svg
+              class="icoSize"
               xmlns="http://www.w3.org/2000/svg"
               width="30"
               height="30"
@@ -186,7 +211,7 @@
     <!--FOOTER-->
     <footer class="footer__container">
       <!--foooter_izquierda-->
-      <a class="header__logo" href="./index.html">Maki</a>
+      <a class="header__logo" href="../index.html">Maki</a>
 
       <div class="footer__socialmedia">
         <!--instagram-->
@@ -195,6 +220,7 @@
           href="https://www.instagram.com/programacodoacodo/?hl=es"
           target="_blank"
           ><svg
+            class="icoSize"
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"
@@ -219,6 +245,7 @@
           href="https://www.facebook.com/groups/135322965179495/?_rdr"
           target="_blank"
           ><svg
+            class="icoSize"
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"
@@ -240,7 +267,7 @@
           target="_blank"
           ><svg
             xmlns="http://www.w3.org/2000/svg"
-            class="icon icon-tabler icon-tabler-brand-x"
+            class="icon icon-tabler icon-tabler-brand-x icoSize"
             width="22"
             height="22"
             viewBox="0 0 24 24"
@@ -257,15 +284,13 @@
           X</a
         >
         <!--x-->
-
-        <p class="footer__p">hecho en Argentina</p>
       </div>
+      <p class="footer__p">by grupo14</p>
       <!--foooter_izquierda-->
 
       <!--foooter_derecha-->
       <div class="footer__info">
-        <p>© 2024 Maki <br /></p>
-        <br />
+        <p>© 2024 Maki</p>
         <p>Politica de privacidad</p>
         <p>Accesibilidad</p>
         <p>Terminos y condiciones</p>
