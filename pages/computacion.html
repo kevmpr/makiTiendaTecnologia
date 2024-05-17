@@ -23,79 +23,24 @@
       <!--logo-->
 
       <div class="nav__container">
-        <!--nav-->
-        <nav class="nav">
-          <!--nav para celulares y tablets-->
-          <div class="dropdown">
-            <button
-              class="btn btn-secondary dropdown-toggle"
-              type="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            ></button>
-            <ul class="dropdown-menu">
-              <li class="nav__list">
-                <span class="material-symbols-outlined"> tv_gen </span
-                ><a class="dropdown-item" href="./tv_audio.html"
-                  >TV y audio</a
-                >
-              </li>
-              <li class="nav__list">
-                <span class="material-symbols-outlined material-symbols-outlinedActive"> computer </span
-                ><a class="dropdown-item nav__pc__enlacesActive" href="./computacion.html"
-                  >Computación</a
-                >
-              </li>
-              <li class="nav__list">
-                <span class="material-symbols-outlined"> phone_android </span
-                ><a class="dropdown-item" href="./moviles.html"
-                  >Moviles</a
-                >
-              </li>
-              <li class="nav__list">
-                <span class="material-symbols-outlined"> groups </span
-                ><a class="dropdown-item" href="./sobreNosotros.html"
-                  >Sobre nosotros</a
-                >
-              </li>
-            </ul>
-          </div>
-          <!--nav para celulares y tablets-->
-
-          <!--nav para pc-->
-          <div class="nav__pc">
-            <a class="nav__pc__enlaces" href="./tv_audio.html"
-              >TV & Audio</a
-            >
-
-            <a class="nav__pc__enlaces nav__pc__enlacesActive" href="./computacion.html"
-              >Computación</a
-            >
-
-            <a class="nav__pc__enlaces" href="./moviles.html">Moviles</a>
-
-            <a class="nav__pc__enlaces" href="./sobreNosotros.html">
-              Sobre nosotros</a
-            >
-          </div>
-          <!--nav para pc-->
-        </nav>
-        <!--nav-->
-
         <!--Buscador-->
         <div class="search__container">
           <label for="search"
             ><svg
-              class="icoSize"
               xmlns="http://www.w3.org/2000/svg"
-              width="30"
-              height="30"
+              width="24"
+              height="24"
               viewBox="0 0 24 24"
-              style="fill: #865dff"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-search header__ico"
             >
-              <path
-                d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z"
-              ></path>
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+              <path d="M21 21l-6 -6" />
             </svg>
           </label>
           <input
@@ -105,39 +50,258 @@
             id="search"
           />
         </div>
-        <!--Buscador--> 
+        <!--Buscador-->
+
+        <!--nav-->
+        <nav class="nav">
+          <!--nav para celulares y tablets-->
+          <input type="checkbox" id="btn-menu" />
+          <div class="container-menu">
+            <div class="cont-menu">
+              <div class="cont-menu__container">
+                <a href="./inicioSesion.html" class="cont-menu__enlaces">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-user nav__ico"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
+                    <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                  </svg>
+
+                  <span class="nav__span">Usuario</span>
+                </a>
+
+                <a href="./carrito.html" class="cont-menu__enlaces">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-shopping-cart nav__ico"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                    <path d="M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                    <path d="M17 17h-11v-14h-2" />
+                    <path d="M6 5l14 1l-1 7h-13" />
+                  </svg>
+
+                  <span class="nav__span">Carrito</span>
+                </a>
+
+                <a href="./tv_audio.html" class="cont-menu__enlaces">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-device-desktop nav__ico"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path
+                      d="M3 5a1 1 0 0 1 1 -1h16a1 1 0 0 1 1 1v10a1 1 0 0 1 -1 1h-16a1 1 0 0 1 -1 -1v-10z"
+                    />
+                    <path d="M7 20h10" />
+                    <path d="M9 16v4" />
+                    <path d="M15 16v4" />
+                  </svg>
+
+                  <span class="nav__span">TV & Audio</span>
+                </a>
+
+                <a href="./moviles.html" class="cont-menu__enlaces">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-device-mobile nav__ico"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path
+                      d="M6 5a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2v-14z"
+                    />
+                    <path d="M11 4h2" />
+                    <path d="M12 17v.01" />
+                  </svg>
+
+                  <span class="nav__span">Moviles</span>
+                </a>
+
+                <a href="./computacion.html" class="cont-menu__enlaces">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-device-laptop nav__ico nav__ico--active"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M3 19l18 0" />
+                    <path
+                      d="M5 6m0 1a1 1 0 0 1 1 -1h12a1 1 0 0 1 1 1v8a1 1 0 0 1 -1 1h-12a1 1 0 0 1 -1 -1z"
+                    />
+                  </svg>
+
+                  <span class="nav__span nav__span--active">Computación</span>
+                </a>
+
+                <a href="./sobreNosotros.html" class="cont-menu__enlaces">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-users-group nav__ico"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M10 13a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                    <path d="M8 21v-1a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v1" />
+                    <path d="M15 5a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                    <path d="M17 10h2a2 2 0 0 1 2 2v1" />
+                    <path d="M5 5a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                    <path d="M3 13v-1a2 2 0 0 1 2 -2h2" />
+                  </svg>
+
+                  <span class="nav__span">Sobre nosotros</span>
+                </a>
+              </div>
+              <label for="btn-menu" class="icon-close cont-menu__label"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-x header__ico"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M18 6l-12 12" />
+                  <path d="M6 6l12 12" />
+                </svg>
+              </label>
+            </div>
+          </div>
+          <div class="btn-menu">
+            <label for="btn-menu" class="btn-menu__entrar"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2 header__ico"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M4 6l16 0" />
+                <path d="M4 12l16 0" />
+                <path d="M4 18l16 0" />
+              </svg>
+            </label>
+          </div>
+          <!--nav para celulares y tablets-->
+
+          <!--nav para pc-->
+          <div class="nav__pc">
+            <a class="nav__pc__enlaces" href="./tv_audio.html"
+              >TV & Audio</a
+            >
+
+            <a class="nav__pc__enlaces" href="./moviles.html">Moviles</a>
+
+            <a class="nav__pc__enlaces nav__pc__enlaces--active" href="./computacion.html"
+              >Computación</a
+            >
+
+            <a class="nav__pc__enlaces" href="./sobreNosotros.html">
+              Sobre nosotros</a
+            >
+          </div>
+          <!--nav para pc-->
+        </nav>
+        <!--nav-->
 
         <!--carrito/usuario-->
         <div class="carritoUsuario">
           <a href="./inicioSesion.html"
             ><svg
-              class="icoSize"
               xmlns="http://www.w3.org/2000/svg"
-              width="30"
-              height="30"
+              width="24"
+              height="24"
               viewBox="0 0 24 24"
-              style="fill: #865dff"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-user header__ico"
             >
-              <path
-                d="M12 2a5 5 0 1 0 5 5 5 5 0 0 0-5-5zm0 8a3 3 0 1 1 3-3 3 3 0 0 1-3 3zm9 11v-1a7 7 0 0 0-7-7h-4a7 7 0 0 0-7 7v1h2v-1a5 5 0 0 1 5-5h4a5 5 0 0 1 5 5v1z"
-              ></path>
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
+              <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
             </svg>
           </a>
 
           <a href="./carrito.html">
             <svg
-              class="icoSize"
               xmlns="http://www.w3.org/2000/svg"
-              width="30"
-              height="30"
+              width="24"
+              height="24"
               viewBox="0 0 24 24"
-              style="fill: #865dff"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-shopping-cart header__ico"
             >
-              <path
-                d="M21.822 7.431A1 1 0 0 0 21 7H7.333L6.179 4.23A1.994 1.994 0 0 0 4.333 3H2v2h2.333l4.744 11.385A1 1 0 0 0 10 17h8c.417 0 .79-.259.937-.648l3-8a1 1 0 0 0-.115-.921zM17.307 15h-6.64l-2.5-6h11.39l-2.25 6z"
-              ></path>
-              <circle cx="10.5" cy="19.5" r="1.5"></circle>
-              <circle cx="17.5" cy="19.5" r="1.5"></circle>
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+              <path d="M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+              <path d="M17 17h-11v-14h-2" />
+              <path d="M6 5l14 1l-1 7h-13" />
             </svg>
           </a>
         </div>
@@ -363,89 +527,250 @@
     <!--FOOTER-->
     <footer class="footer__container">
       <!--foooter_izquierda-->
-      <a class="header__logo" href="../index.html">Maki</a>
-
-      <div class="footer__socialmedia">
-        <!--instagram-->
-        <a
-          class="footer__medialinks"
-          href="https://www.instagram.com/programacodoacodo/?hl=es"
-          target="_blank"
-          ><svg
-            class="icoSize"
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            style="fill: #e384ff"
-          >
-            <path
-              d="M11.999 7.377a4.623 4.623 0 1 0 0 9.248 4.623 4.623 0 0 0 0-9.248zm0 7.627a3.004 3.004 0 1 1 0-6.008 3.004 3.004 0 0 1 0 6.008z"
-            ></path>
-            <circle cx="16.806" cy="7.207" r="1.078"></circle>
-            <path
-              d="M20.533 6.111A4.605 4.605 0 0 0 17.9 3.479a6.606 6.606 0 0 0-2.186-.42c-.963-.042-1.268-.054-3.71-.054s-2.755 0-3.71.054a6.554 6.554 0 0 0-2.184.42 4.6 4.6 0 0 0-2.633 2.632 6.585 6.585 0 0 0-.419 2.186c-.043.962-.056 1.267-.056 3.71 0 2.442 0 2.753.056 3.71.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.042 1.268.055 3.71.055s2.755 0 3.71-.055a6.615 6.615 0 0 0 2.186-.419 4.613 4.613 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.186.043-.962.056-1.267.056-3.71s0-2.753-.056-3.71a6.581 6.581 0 0 0-.421-2.217zm-1.218 9.532a5.043 5.043 0 0 1-.311 1.688 2.987 2.987 0 0 1-1.712 1.711 4.985 4.985 0 0 1-1.67.311c-.95.044-1.218.055-3.654.055-2.438 0-2.687 0-3.655-.055a4.96 4.96 0 0 1-1.669-.311 2.985 2.985 0 0 1-1.719-1.711 5.08 5.08 0 0 1-.311-1.669c-.043-.95-.053-1.218-.053-3.654 0-2.437 0-2.686.053-3.655a5.038 5.038 0 0 1 .311-1.687c.305-.789.93-1.41 1.719-1.712a5.01 5.01 0 0 1 1.669-.311c.951-.043 1.218-.055 3.655-.055s2.687 0 3.654.055a4.96 4.96 0 0 1 1.67.311 2.991 2.991 0 0 1 1.712 1.712 5.08 5.08 0 0 1 .311 1.669c.043.951.054 1.218.054 3.655 0 2.436 0 2.698-.043 3.654h-.011z"
-            ></path>
-          </svg>
-          Instagram
-        </a>
-        <!--instagram-->
-
-        <!--facebook-->
-        <a
-          class="footer__medialinks"
-          href="https://www.facebook.com/groups/135322965179495/?_rdr"
-          target="_blank"
-          ><svg
-            class="icoSize"
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            style="fill: #e384ff"
-          >
-            <path
-              d="M13.397 20.997v-8.196h2.765l.411-3.209h-3.176V7.548c0-.926.258-1.56 1.587-1.56h1.684V3.127A22.336 22.336 0 0 0 14.201 3c-2.444 0-4.122 1.492-4.122 4.231v2.355H7.332v3.209h2.753v8.202h3.312z"
-            ></path>
-          </svg>
-          Facebook
-        </a>
-        <!--facebook-->
-
-        <!--x-->
-        <a
-          class="footer__medialinks"
-          href="https://twitter.com/EducacionBA/status/1404807225420435463?lang=es"
-          target="_blank"
-          ><svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="icon icon-tabler icon-tabler-brand-x icoSize"
-            width="22"
-            height="22"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="#e384ff"
-            fill="none"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-            <path d="M4 4l11.733 16h4.267l-11.733 -16z" />
-            <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
-          </svg>
-          X</a
-        >
-        <!--x-->
+      <div class="footer__logo">
+        <a class="header__logo header__logo--Mod" href="./index.html">Maki</a>
+        <span class="footer__span">by grupo14</span>
       </div>
-      <p class="footer__p">by grupo14</p>
-      <!--foooter_izquierda-->
+
+      <div class="footer__secciones">
+        <div class="footer__enlaces">
+          <p class="footer__seccion-titulo">Paginas</p>
+          <a href="./inicioSesion.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-user"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
+              <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+            </svg>
+  
+            <span class="footer__ico-span">Usuario</span>
+          </a>
+  
+          <a href="./carrito.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-shopping-cart"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+              <path d="M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+              <path d="M17 17h-11v-14h-2" />
+              <path d="M6 5l14 1l-1 7h-13" />
+            </svg>
+  
+            <span class="footer__ico-span">Carrito</span>
+          </a>
+  
+          <a href="./tv_audio.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-device-desktop"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M3 5a1 1 0 0 1 1 -1h16a1 1 0 0 1 1 1v10a1 1 0 0 1 -1 1h-16a1 1 0 0 1 -1 -1v-10z"
+              />
+              <path d="M7 20h10" />
+              <path d="M9 16v4" />
+              <path d="M15 16v4" />
+            </svg>
+  
+            <span class="footer__ico-span">TV & Audio</span>
+          </a>
+  
+          <a href="./moviles.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-device-mobile"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M6 5a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2v-14z"
+              />
+              <path d="M11 4h2" />
+              <path d="M12 17v.01" />
+            </svg>
+  
+            <span class="footer__ico-span">Moviles</span>
+          </a>
+  
+          <a href="./computacion.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-device-laptop"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M3 19l18 0" />
+              <path
+                d="M5 6m0 1a1 1 0 0 1 1 -1h12a1 1 0 0 1 1 1v8a1 1 0 0 1 -1 1h-12a1 1 0 0 1 -1 -1z"
+              />
+            </svg>
+  
+            <span class="footer__ico-span">Computación</span>
+          </a>
+  
+          <a href="./sobreNosotros.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-users-group"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M10 13a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+              <path d="M8 21v-1a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v1" />
+              <path d="M15 5a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+              <path d="M17 10h2a2 2 0 0 1 2 2v1" />
+              <path d="M5 5a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+              <path d="M3 13v-1a2 2 0 0 1 2 -2h2" />
+            </svg>
+  
+            <span class="footer__ico-span">Sobre nosotros</span>
+          </a>
+        </div>
+  
+        <div class="footer__socialmedia">
+          <!--instagram-->
+          <p class="footer__seccion-titulo">Redes</p>
+          <a
+            class="footer__medialinks"
+            href="https://www.instagram.com/programacodoacodo/?hl=es"
+            target="_blank"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z"
+              />
+              <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+              <path d="M16.5 7.5l0 .01" />
+            </svg>
+  
+            <span class="footer__ico-span">Instagram</span>
+          </a>
+          <!--instagram-->
+  
+          <!--facebook-->
+          <a
+            class="footer__medialinks"
+            href="https://www.facebook.com/groups/135322965179495/?_rdr"
+            target="_blank"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-brand-facebook"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"
+              />
+            </svg>
+  
+            <span class="footer__ico-span">Facebook</span>
+          </a>
+          <!--facebook-->
+  
+          <!--x-->
+          <a
+            class="footer__medialinks"
+            href="https://twitter.com/EducacionBA/status/1404807225420435463?lang=es"
+            target="_blank"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-brand-x"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M4 4l11.733 16h4.267l-11.733 -16z" />
+              <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
+            </svg>
+  
+            <span class="footer__ico-span">X</span>
+          </a>
+          <!--x-->
+        </div>
+        <!--foooter_izquierda-->
+
+      </div>
 
       <!--foooter_derecha-->
       <div class="footer__info">
-        <p>© 2024 Maki</p>
-        <p>Politica de privacidad</p>
-        <p>Accesibilidad</p>
-        <p>Terminos y condiciones</p>
+        <p class="footer__ico-p">© 2024 Maki</p>
+        <p class="footer__ico-p">Politica de privacidad</p>
+        <p class="footer__ico-p">Accesibilidad</p>
+        <p class="footer__ico-p">Terminos y condiciones</p>
       </div>
       <!--foooter_derecha-->
     </footer>
