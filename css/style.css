@@ -292,7 +292,7 @@ input:focus {
 }
 
 .container-menu {
-  position: absolute;
+  position: fixed;
   background: rgba(0, 0, 0, 0.5);
   width: 100%;
   max-height: fit-content;
@@ -1007,7 +1007,6 @@ input:focus {
   border-radius: 2rem;
 }
 
-
 @media (min-width: 1280px) {
   .carrito {
     display: flex;
@@ -1017,7 +1016,7 @@ input:focus {
     padding-right: 3rem;
   }
 
-  .carrito:hover{
+  .carrito:hover {
     box-shadow: 0 0.1rem 0.8rem var(--secundario);
   }
 }
@@ -1168,23 +1167,58 @@ input:focus {
 }
 
 .contenedor_productos {
-  display: flex;
+  display: inline;
   flex-direction: column;
   text-align: center;
   overflow-x: hidden;
   justify-content: space-between;
 }
+p {
+  font-size: large;
+}
+p:hover {
+  color: darkblue;
+}
+
+button {
+  background: rgb(76, 0, 255);
+  width: 140px;
+  color: white;
+}
+
+button:hover {
+  background: blue;
+  color: white;
+  width: 180px;
+}
 
 .producto_compu {
   display: flex;
   flex-direction: column;
-  height: auto;
+  height: 100%;
   padding: 2rem;
 }
 
+@media (min-width: 768px) {
+  .contenedor_productos {
+    display: inline-flex;
+  }
+}
+
 @media (min-width: 1024px) {
+  .contenedor_productos {
+    display: flex;
+    display: grid;
+    grid-template-areas: "div div";
+    justify-content: center;
+    margin: 10px;
+  }
   .producto_compu {
-    display: inline;
+    display: flex;
+    position: relative;
+    overflow-x: hidden;
+    justify-content: space-between;
+    gap: 10px;
   }
 }
 /*--------------------------------------------------------------COMPUTACION---------------------------------------------------------------------*/
@@ -1223,14 +1257,51 @@ input:focus {
   padding: 2rem;
 }
 
-@media (min-width: 1024px) {
-  .movil {
-    display: inline;
+p {
+  font-size: large;
+}
+p:hover {
+  color: darkblue;
+}
+
+button {
+  background: rgb(76, 0, 255);
+  width: 140px;
+  color: white;
+}
+
+button:hover {
+  background: blue;
+  color: white;
+  width: 180px;
+}
+
+@media (min-width: 768px) {
+  .productos_moviles {
+    display: inline-flex;
   }
 }
-/*----------------------------------------------------------------MOVILES-----------------------------------------------------------------------*/
+
+@media (min-width: 1024px) {
+  .productos_moviles {
+    display: flex;
+    display: grid;
+    grid-template-areas: "div div";
+    justify-content: center;
+    margin: 10px;
+  }
+  .movil {
+    display: flex;
+    position: relative;
+    overflow-x: hidden;
+    justify-content: space-between;
+    gap: 10px;
+  }
+}
 
 /*----------------------------------------------------------------MOVILES-----------------------------------------------------------------------*/
+
+/*---------------------------------------------------------------TV-----------------------------------------------------------------------*/
 
 .conteiner_tv {
   display: flex;
@@ -1247,6 +1318,7 @@ input:focus {
   align-items: center;
   padding: 2rem;
   margin: 10px 40px;
+  top: 10px;
 }
 
 .productos_tv {
@@ -1262,4 +1334,46 @@ input:focus {
   flex-direction: column;
   height: auto;
   padding: 2rem;
+}
+
+p {
+  font-size: large;
+}
+p:hover {
+  color: darkblue;
+}
+
+button {
+  background: rgb(76, 0, 255);
+  width: 140px;
+  color: white;
+}
+
+button:hover {
+  background: blue;
+  color: white;
+  width: 180px;
+}
+
+@media (min-width: 768px) {
+  .productos_tv {
+    display: inline-flex;
+  }
+}
+
+@media (min-width: 1024px) {
+  .productos_tv {
+    display: flex;
+    display: grid;
+    grid-template-areas: "div div";
+    justify-content: center;
+    margin: 10px;
+  }
+  .tv {
+    display: flex;
+    position: relative;
+    overflow-x: hidden;
+    justify-content: space-between;
+    gap: 10px;
+  }
 }
