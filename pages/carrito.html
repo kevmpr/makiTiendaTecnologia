@@ -322,17 +322,19 @@
           <!--primerProductoCarrito-->
           <div class="carrito">
             <!--imgProducto-->
-            <img loading="lazy"
-              class="img__carrito"
-              src="../assets/img/celular1.webp"
-              alt="producto1"
-            />
+            <div class="carrito__container-img">
+              <img loading="lazy"
+                class="img__carrito"
+                src="../assets/img/celular1.webp"
+                alt="producto1"
+              />
+            </div>
             <!--imgProducto-->
 
             <!--infoProducto-->
             <div class="info__containerCarrito">
               <div>
-                <h2>Moto G84 5G</h2>
+                <h2 class="h2--carrito">Moto G84 5G</h2>
                 <p>Negro</p>
                 <p>$549.999</p>
               </div>
@@ -392,17 +394,19 @@
           <!--segundoProductoCarrito-->
           <div class="carrito">
             <!--imgProducto-->
-            <img loading="lazy"
-              class="img__carrito"
-              src="../assets/img/tele4.webp"
-              alt="producto1"
-            />
+            <div class="carrito__container-img">
+              <img loading="lazy"
+                class="img__carrito"
+                src="../assets/img/tele4.webp"
+                alt="producto1"
+              />
+            </div>
             <!--imgProducto-->
 
             <!--infoProducto-->
             <div class="info__containerCarrito">
               <div>
-                <h2>Motorola Smart TV 55"</h2>
+                <h2 class="h2--carrito">Motorola Smart TV 55"</h2>
                 <p>Negro</p>
                 <p>$678.999</p>
               </div>
@@ -462,17 +466,19 @@
           <!--tercerProductoCarrito-->
           <div class="carrito">
             <!--imgProducto-->
-            <img loading="lazy"
-              class="img__carrito"
-              src="../assets/img/computacion2.webp"
-              alt="producto1"
-            />
+            <div class="carrito__container-img">
+              <img loading="lazy"
+                class="img__carrito"
+                src="../assets/img/computacion2.webp"
+                alt="producto1"
+              />
+            </div>
             <!--imgProducto-->
 
             <!--infoProducto-->
             <div class="info__containerCarrito">
               <div>
-                <h2>Monitor Smart M8 32" 4K</h2>
+                <h2 class="h2--carrito">Monitor Smart M8 32" 4K</h2>
                 <p>Negro</p>
                 <p>$1.199.999</p>
               </div>
@@ -538,9 +544,9 @@
             <h2 class="titulo__compra">Envío</h2>
 
             <div class="codigoPostal">
-              <h3>Código postal</h3>
-              <input class="input" type="number" name="cp" id="cp" min="0" />
-              <input class="myButton" type="button" value="Aplicar" />
+              <label for="cp">Codigo postal</label>
+              <input class="input input--carrito" type="text" name="cp" id="cp" min="0" id="cp"/>
+              <input class="myButton myButton--carrito" type="button" value="Aplicar" />
             </div>
           </div>
           <!--envio-->
@@ -557,7 +563,7 @@
             <a class="alternativa__enlace" href="../index.html"
               >elegir más productos</a
             >
-            <input class="myButton" type="button" value="Finalizar compra" />
+            <input class="myButton myButton--carrito" type="button" value="Finalizar compra"/>
           </div>
           <!--finalizarCompra-->
         </section>
