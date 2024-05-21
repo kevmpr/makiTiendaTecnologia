@@ -649,7 +649,7 @@ input:focus {
 }
 @media (min-width: 1750px) {
   .banner {
-    width: 70%;
+    width: 30%;
   }
 }
 
