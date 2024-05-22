@@ -6,7 +6,7 @@
 <ul>
   <li>
     <h3>index.html</h3>
-    <p>Es nuestra pagina principal, el que te da la bienvenidad con los productos populares y los más nuevos</p>
+    <p>Es nuestra pagina principal, el que te da la bienvenida con los productos populares y los más nuevos</p>
   </li>
   <li>
     <h3>inicioSesion.html</h3>
