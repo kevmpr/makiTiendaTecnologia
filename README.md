@@ -21,7 +21,7 @@
     <p>En esta pagina podras conocer a fondo nuestra historia, valores y compromiso</p>
   </li>
   <li>
-    <h3>t_audio.html</h3>
+    <h3>tv_audio.html</h3>
     <p>Productos de tv y audio con filtros para conseguir el producto que más se adeque a tus necesidades</p>
   </li>
   <li>
