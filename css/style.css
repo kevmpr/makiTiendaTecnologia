@@ -761,6 +761,10 @@ input:focus {
   margin: 6rem 0;
 }
 
+.suscripcion__container {
+  display: flex;
+}
+
 .suscripcion__title {
   text-align: center;
 }
@@ -768,6 +772,14 @@ input:focus {
 .suscripcion__input,
 .suscripcion__input:focus {
   border-bottom: 1px solid var(--gris);
+  width: 15rem;
+  text-align: center;
+}
+
+@media (min-width: 780px) {
+  .suscripcion__input {
+    width: auto;
+  }
 }
 /*--------------------------------------------------------------INDEX.HTML--------------------------------------------------------------*/
 
@@ -1263,15 +1275,15 @@ input:focus {
   width: auto;
 }
 
-.filtros_div{
+.filtros_div {
   color: var(--blanco);
 }
 
-.filtros_div__texto:hover{
+.filtros_div__texto:hover {
   color: var(--gris);
 }
 
-.ordenarPor{
+.ordenarPor {
   margin-top: 3rem;
 }
 @media (min-width: 1280px) {
@@ -1295,16 +1307,19 @@ p {
 p:hover {
   color: var(--activarbutton);
 }
-button {
+.productos__button {
   border: none;
   background: var(--primario);
   width: 140px;
-  color: var(--blanco);
 }
-button:hover {
+.productos__button:hover {
   animation: buttonAnimation 0.3s linear 1 forwards;
   color: var(--blanco);
 }
+.productos__button > a{
+  color: var(--blanco)!important;
+}
+
 .productos {
   display: flex;
   flex-direction: column;
