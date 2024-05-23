@@ -1263,6 +1263,14 @@ input:focus {
   width: auto;
 }
 
+.filtros_div{
+  color: var(--blanco);
+}
+
+.filtros_div__texto:hover{
+  color: var(--gris);
+}
+
 .ordenarPor{
   margin-top: 3rem;
 }
