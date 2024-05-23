@@ -221,6 +221,7 @@ input:focus {
 .input__search {
   width: 100%;
   border-radius: 10px;
+  height: 4rem;
 }
 
 @media (min-width: 1024px) {
@@ -281,15 +282,15 @@ input:focus {
 .nav {
   order: 4;
   height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (min-width: 1200px) {
   .nav {
     order: 3;
     width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 }
 
