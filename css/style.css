@@ -346,11 +346,12 @@ input:focus {
 }
 
 .cont-menu__enlaces {
-  display: block;
+  display: flex;
   padding: 2rem;
   border-left: 0.5rem solid transparent;
   transition: all 50ms ease;
   color: var(--primario);
+  align-items: center;
 }
 
 .cont-menu__enlaces:hover {
@@ -364,6 +365,9 @@ input:focus {
 
 .cont-menu__enlaces:hover > .nav__span {
   color: var(--blanco);
+}
+
+.nav__ico{
 }
 
 .nav__ico--active {
