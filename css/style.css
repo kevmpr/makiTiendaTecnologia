@@ -367,9 +367,6 @@ input:focus {
   color: var(--blanco);
 }
 
-.nav__ico{
-}
-
 .nav__ico--active {
   stroke: var(--blanco);
 }
