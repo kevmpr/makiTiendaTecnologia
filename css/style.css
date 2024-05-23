@@ -566,7 +566,8 @@ input:focus {
   }
 }
 
-.footer__seccion-titulo {
+.footer__seccion-titulo,
+.footer__seccion-titulo:hover {
   color: var(--primario);
 }
 
@@ -632,6 +633,7 @@ input:focus {
 
 .footer__ico-p:hover {
   color: var(--gris);
+  cursor: pointer;
 }
 
 /*--------------------------------------------------------------INDEX.HTML--------------------------------------------------------------*/
@@ -1310,14 +1312,16 @@ p:hover {
 .productos__button {
   border: none;
   background: var(--primario);
-  width: 140px;
+  margin: 0 auto;
+  width: 20rem;
 }
 .productos__button:hover {
   animation: buttonAnimation 0.3s linear 1 forwards;
   color: var(--blanco);
+  cursor: pointer;
 }
-.productos__button > a{
-  color: var(--blanco)!important;
+.productos__button > a {
+  color: var(--blanco) !important;
 }
 
 .productos {
