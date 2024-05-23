@@ -303,9 +303,11 @@ input:focus {
   transition: all 50ms ease;
   opacity: 0;
   visibility: hidden;
+  z-index: 15 !important;
 }
 
-#btn-menu {
+#btn-menu,
+#btn-bootstrap {
   display: none;
 }
 
@@ -330,6 +332,12 @@ input:focus {
 
 #btn-menu:checked ~ .container-menu .cont-menu {
   transform: translateX(0%);
+}
+
+#btn:checked > #carouselExample1,
+#btn:checked > #carouselExample2 {
+  position: relative;
+  z-index: -1;
 }
 
 .cont-menu__container {
@@ -631,25 +639,23 @@ input:focus {
   grid-row: 2 / 3;
   width: 100%;
   height: auto;
-  padding: 3rem 0;
+  padding: 0 0 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+.banner-container {
+  margin: 2rem;
+}
+
 .banner {
-  margin: 0 2rem;
   width: 100%;
 }
 
 @media (min-width: 1280px) {
   .banner {
-    width: 50%;
-  }
-}
-@media (min-width: 1750px) {
-  .banner {
-    width: 30%;
+    width: 100%;
   }
 }
 
@@ -706,6 +712,13 @@ input:focus {
   width: 100%;
 }
 
+@media (min-width: 1280px) {
+  .productos-containerMain {
+    display: flex;
+    gap: 40rem;
+  }
+}
+
 .productos__container {
   width: 100%;
   display: flex;
@@ -726,12 +739,34 @@ input:focus {
   height: 30rem !important;
 }
 
-.carousel-control-prev,
-.carousel-control-next {
-  background-color: var(--primario) !important;
-  border-radius: 2rem;
-  height: 4rem;
-  margin-top: 8rem;
+#carouselExample1,
+#carouselExample2 {
+  position: relative;
+  z-index: -1;
+}
+
+@media (min-width: 1280px) {
+  #carouselExample1,
+  #carouselExample2 {
+    position: relative;
+    z-index: -1;
+  }
+}
+
+.suscripcion{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin: 6rem 0;
+}
+
+.suscripcion__title{
+  text-align: center;
+}
+
+.suscripcion__input, .suscripcion__input:focus{
+  border-bottom: 1px solid var(--gris);
 }
 /*--------------------------------------------------------------INDEX.HTML--------------------------------------------------------------*/
 
@@ -1223,8 +1258,19 @@ input:focus {
   text-align: left;
   background-color: var(--primario);
   font-size: small;
-  align-items: center;
+  align-items: start;
+  width: auto;
 }
+
+@media (min-width: 1280px){  
+  .ordenarPor{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 3rem;
+  }
+ }
+
 
 .contenedor_productos {
   display: flex;
@@ -1240,14 +1286,14 @@ p:hover {
   color: var(--activarbutton);
 }
 button {
+  border: none;
   background: var(--primario);
   width: 140px;
   color: var(--blanco);
 }
 button:hover {
-  background: var(--activarbutton);
+  animation: buttonAnimation 0.3s linear 1 forwards;
   color: var(--blanco);
-  width: 180px;
 }
 .productos {
   display: flex;

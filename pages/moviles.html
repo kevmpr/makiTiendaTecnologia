@@ -245,11 +245,13 @@
 
           <!--nav para pc-->
           <div class="nav__pc">
-            <a class="nav__pc__enlaces" href="./tv_audio.html"
-              >TV & Audio</a
-            >
+            <a class="nav__pc__enlaces" href="./tv_audio.html">TV & Audio</a>
 
-            <a class="nav__pc__enlaces nav__pc__enlaces--active" href="./moviles.html">Moviles</a>
+            <a
+              class="nav__pc__enlaces nav__pc__enlaces--active"
+              href="./moviles.html"
+              >Moviles</a
+            >
 
             <a class="nav__pc__enlaces" href="./computacion.html"
               >Computación</a
@@ -317,92 +319,92 @@
         <h3>Filtros</h3>
         <div>
           <h2>Marca</h2>
-          <div >
           <div>
-            <input type="checkbox" />
-            <label for="Samnsung">Samsung</label>
-          </div>
+            <div>
+              <input id="samsung" type="checkbox" />
+              <label for="samsung">Samsung</label>
+            </div>
 
-          <div>
-            <input type="checkbox" />
-            <label for="Xiaomi">Xiaomi</label>
-          </div>
+            <div>
+              <input id="xiaomi" type="checkbox" />
+              <label for="xiaomi">Xiaomi</label>
+            </div>
 
-          <div>
-            <input type="checkbox" />
-            <label for="Motorola">Motorola</label>
-          </div>
+            <div>
+              <input id="motorola" type="checkbox" />
+              <label for="motorola">Motorola</label>
+            </div>
 
-          <div>
-            <input type="checkbox" />
-            <label for="TCL">TLC</label>
+            <div>
+              <input id="tlc" type="checkbox" />
+              <label for="tlc">TLC</label>
+            </div>
           </div>
         </div>
-      </div>
 
         <div>
           <h2>Color</h2>
-          <div class="filtros_movil"> 
-          <div>
-            <input type="checkbox" />
-            <label for="Beige">Beige</label>
-          </div>
+          <div class="filtros_movil">
+            <div>
+              <input id="beige" type="checkbox" />
+              <label for="beige">Beige</label>
+            </div>
 
-          <div>
-            <input type="checkbox" />
-            <label for="Negro">Negro</label>
-          </div>
+            <div>
+              <input id="negro" type="checkbox" />
+              <label for="negro">Negro</label>
+            </div>
 
-          <div>
-            <input type="checkbox" />
-            <label for="Rosa">Rosa</label>
-          </div>
+            <div>
+              <input id="rosa" type="checkbox" />
+              <label for="rosa">Rosa</label>
+            </div>
 
-          <div>
-            <input type="checkbox" />
-            <label for="Azul">Azul</label>
+            <div>
+              <input id="azul" type="checkbox" />
+              <label for="azul">Azul</label>
+            </div>
           </div>
         </div>
-      </div>
 
         <div>
           <h2>Gama</h2>
           <div class="filtros_movil">
-          <div>
-            <input type="checkbox" />
-            <label for="baja">baja</label>
-          </div>
+            <div>
+              <input id="baja" type="checkbox" />
+              <label for="baja">Baja</label>
+            </div>
 
-          <div>
-            <input type="checkbox" />
-            <label for="media">media</label>
-          </div>
+            <div>
+              <input id="media" type="checkbox" />
+              <label for="media">Media</label>
+            </div>
 
-          <div>
-            <input type="checkbox" />
-            <label for="alta">alta</label>
-          </div>
+            <div>
+              <input id="alta" type="checkbox" />
+              <label for="alta">Alta</label>
+            </div>
 
-          <div>
-            <input type="checkbox" />
-            <label for="entuciasta">entuciasta</label>
+            <div>
+              <input id="entuciasta" type="checkbox" />
+              <label for="entuciasta">Entuciasta</label>
+            </div>
           </div>
         </div>
-      </div>
       </section>
       <!--filtros-->
 
       <!--productosExhibidos-->
       <section>
         <!--orden-->
-        <div>
+        <div class="ordenarPor">
           <p>Ordenar por</p>
-          <select name="order" id="">
-            <option value="">Relevancia</option>
-            <option value="">Más reciente</option>
-            <option value="">Más antiguo</option>
-            <option value="">A - Z</option>
-            <option value="">Z - A</option>
+          <select name="order" id="order">
+            <option value="relevancia">Relevancia</option>
+            <option value="masReciente">Más reciente</option>
+            <option value="masAntiguo">Más antiguo</option>
+            <option value="az">A - Z</option>
+            <option value="za">Z - A</option>
           </select>
         </div>
         <!--orden-->
@@ -438,7 +440,9 @@
             <img src="../assets/img/celular3.webp" alt="producto3" />
 
             <div>
-              <p>Celular Samnsung Galaxy Z Fold 4 256gb+ 12gb Ram 120hz Beige</p>
+              <p>
+                Celular Samnsung Galaxy Z Fold 4 256gb+ 12gb Ram 120hz Beige
+              </p>
               <strong><p>$ 2.099.249</p></strong>
               <button>Comprar</button>
             </div>
@@ -551,10 +555,10 @@
               <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
               <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
             </svg>
-  
+
             <span class="footer__ico-span">Usuario</span>
           </a>
-  
+
           <a href="./carrito.html">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -574,10 +578,10 @@
               <path d="M17 17h-11v-14h-2" />
               <path d="M6 5l14 1l-1 7h-13" />
             </svg>
-  
+
             <span class="footer__ico-span">Carrito</span>
           </a>
-  
+
           <a href="./tv_audio.html">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -599,10 +603,10 @@
               <path d="M9 16v4" />
               <path d="M15 16v4" />
             </svg>
-  
+
             <span class="footer__ico-span">TV & Audio</span>
           </a>
-  
+
           <a href="./moviles.html">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -623,10 +627,10 @@
               <path d="M11 4h2" />
               <path d="M12 17v.01" />
             </svg>
-  
+
             <span class="footer__ico-span">Moviles</span>
           </a>
-  
+
           <a href="./computacion.html">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -646,10 +650,10 @@
                 d="M5 6m0 1a1 1 0 0 1 1 -1h12a1 1 0 0 1 1 1v8a1 1 0 0 1 -1 1h-12a1 1 0 0 1 -1 -1z"
               />
             </svg>
-  
+
             <span class="footer__ico-span">Computación</span>
           </a>
-  
+
           <a href="./sobreNosotros.html">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -671,11 +675,11 @@
               <path d="M5 5a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
               <path d="M3 13v-1a2 2 0 0 1 2 -2h2" />
             </svg>
-  
+
             <span class="footer__ico-span">Sobre nosotros</span>
           </a>
         </div>
-  
+
         <div class="footer__socialmedia">
           <!--instagram-->
           <p class="footer__seccion-titulo">Redes</p>
@@ -702,11 +706,11 @@
               <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
               <path d="M16.5 7.5l0 .01" />
             </svg>
-  
+
             <span class="footer__ico-span">Instagram</span>
           </a>
           <!--instagram-->
-  
+
           <!--facebook-->
           <a
             class="footer__medialinks"
@@ -729,11 +733,11 @@
                 d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"
               />
             </svg>
-  
+
             <span class="footer__ico-span">Facebook</span>
           </a>
           <!--facebook-->
-  
+
           <!--x-->
           <a
             class="footer__medialinks"
@@ -755,13 +759,12 @@
               <path d="M4 4l11.733 16h4.267l-11.733 -16z" />
               <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
             </svg>
-  
+
             <span class="footer__ico-span">X</span>
           </a>
           <!--x-->
         </div>
         <!--foooter_izquierda-->
-
       </div>
 
       <!--foooter_derecha-->

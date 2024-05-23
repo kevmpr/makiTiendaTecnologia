@@ -221,6 +221,7 @@
             </div>
           </div>
           <div class="btn-menu">
+            <label for="btn-bootstrap"></label>
             <label for="btn-menu" class="btn-menu__entrar"
               ><svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -312,121 +313,168 @@
     <!--MAIN-->
     <main class="main__containerIndex">
       <!--Banner-->
-      <div class="banner">
-        <div class="slider-frame">
-          <ul class="slider-frame__container">
-            <li class="slider-frame__li"><img class="slider-frame__img" src="./assets/img/banner1.webp" alt="banner1 loading="lazy"></li>
-            <li class="slider-frame__li"><img class="slider-frame__img" src="./assets/img/banner2.webp" alt="banner2" loading="lazy"></li>
-            <li class="slider-frame__li"><img class="slider-frame__img" src="./assets/img/banner3.webp" alt="banner3" loading="lazy"></li>
-            <li class="slider-frame__li"><img class="slider-frame__img" src="./assets/img/banner4.webp" alt="banner4" loading="lazy"></li>
-          </ul>
+      <div class="banner-container">
+        <div class="banner">
+          <div class="slider-frame">
+            <ul class="slider-frame__container">
+              <li class="slider-frame__li">
+                <picture>
+                  <source
+                    media="(min-width:1280px)"
+                    srcset="./assets/img/banner1Grande.jpg"
+                    alt="banner1"
+                    loading="lazy"
+                  />
+                  <img
+                    class="slider-frame__img"
+                    src="./assets/img/banner1.webp"
+                    alt="banner1"
+                    loading="lazy"
+                  />
+                </picture>
+              </li>
+              <li class="slider-frame__li">
+                <picture>
+                  <source
+                    media="(min-width:1280px)"
+                    srcset="./assets/img/banner2Grande.jpg"
+                    alt="banner1"
+                    loading="lazy"
+                  />
+                  <img
+                    class="slider-frame__img"
+                    src="./assets/img/banner2.webp"
+                    alt="banner1"
+                    loading="lazy"
+                  />
+                </picture>
+              </li>
+              <li class="slider-frame__li">
+                <picture>
+                  <source
+                    media="(min-width:1280px)"
+                    srcset="./assets/img/banner3Grande.jpg"
+                    alt="banner1"
+                    loading="lazy"
+                  />
+                  <img
+                    class="slider-frame__img"
+                    src="./assets/img/banner3.webp"
+                    alt="banner1"
+                    loading="lazy"
+                  />
+                </picture>
+              </li>
+              <li class="slider-frame__li">
+                <picture>
+                  <source
+                    media="(min-width:1280px)"
+                    srcset="./assets/img/banner4Grande.jpg"
+                    alt="banner1"
+                    loading="lazy"
+                  />
+                  <img
+                    class="slider-frame__img"
+                    src="./assets/img/banner4.webp"
+                    alt="banner1"
+                    loading="lazy"
+                  />
+                </picture>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
       <!--Banner-->
 
       <!--productosDestacados-->
-      <section class="productos__container">
-        <h2 class="productos__titulo">Popular</h2>
-        <div id="carouselExample1" class="carousel slide">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img
-                loading="lazy"
-                src="./assets/img/celular3.webp"
-                class="d-block w-100"
-                alt="..."
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                loading="lazy"
-                src="./assets/img/tele9.webp"
-                class="d-block w-100"
-                alt="..."
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                loading="lazy"
-                src="./assets/img/tele3.webp"
-                class="d-block w-100"
-                alt="..."
-              />
+      <div class="productos-containerMain">
+        <input type="checkbox" id="btn-bootstrap" />
+        <section class="productos__container">
+          <h2 class="productos__titulo">Popular</h2>
+          <div
+            id="carouselExample1"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="3000">
+                <img
+                  loading="lazy"
+                  src="./assets/img/celular3.webp"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <img
+                  loading="lazy"
+                  src="./assets/img/tele9.webp"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <img
+                  loading="lazy"
+                  src="./assets/img/tele3.webp"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
             </div>
           </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExample1"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExample1"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-      </section>
-      <!--productosDestacados-->
+        </section>
+        <!--productosDestacados-->
 
-      <!--productosNuevos-->
-      <section class="productos__container">
-        <h2 class="productos__titulo">Nuevo</h2>
-        <div id="carouselExample2" class="carousel slide">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img
-                loading="lazy"
-                src="./assets/img/celular4.webp"
-                class="d-block w-100"
-                alt="..."
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                loading="lazy"
-                src="./assets/img/computacion1.webp"
-                class="d-block w-100"
-                alt="..."
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                loading="lazy"
-                src="./assets/img/computacion3.webp"
-                class="d-block w-100"
-                alt="..."
-              />
+        <!--productosNuevos-->
+        <section class="productos__container">
+          <h2 class="productos__titulo">Nuevo</h2>
+          <div
+            id="carouselExample2"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="3000">
+                <img
+                  loading="lazy"
+                  src="./assets/img/celular4.webp"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <img
+                  loading="lazy"
+                  src="./assets/img/computacion1.webp"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <img
+                  loading="lazy"
+                  src="./assets/img/computacion3.webp"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
             </div>
           </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExample2"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExample2"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+        </section>
+        <!--productosNuevos-->
+      </div>
+
+      <!--suscripcion-->
+      <div class="suscripcion">
+        <h2 class="suscripcion__title">Suscribite para recibir novedades</h2>
+        <div class="suscripcion__container">
+          <input class="suscripcion__input" type="email" placeholder="Ingresá tu email">
+          <input type="button" class="myButton myButton--carrito" value="Enviar">
         </div>
-      </section>
-      <!--productosNuevos-->
+      </div>
+      <!--suscripcion-->
     </main>
     <!--MAIN-->
 
