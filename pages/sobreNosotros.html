@@ -355,14 +355,69 @@
         />
       </article>
 
-      <iframe
-        class="map"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.016890936082!2d-58.38643594579392!3d-34.603734387966355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses-419!2sar!4v1715357129862!5m2!1ses-419!2sar"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
+      <div class="infoSobreNosotros">
+        <h2 class="infoSobreNosotros__titulo">Contactanos</h2>
+        <div class="infoSobreNosotros__container">
+          <form class="contacto" action="#">
+            <div class="contacto__container">
+              <div class="contacto__rellenar">
+                <label class="contacto__label" for="nombre">Nombre y Apellido</label>
+                <input class="contacto__input" type="text" autocomplete="name" id="nombre">
+              </div>
+      
+              <div class="contacto__rellenar">
+                <label class="contacto__label" for="email">Email</label>
+                <input class="contacto__input" type="email" autocomplete="email" id="email">
+              </div>
+      
+              <div class="contacto__rellenar">
+                <label class="contacto__label" for="telefono">Teléfono</label>
+                <input class="contacto__input" type="tel" autocomplete="tel" id="telefono">
+              </div>
+      
+              <div class="contacto__rellenar">
+                <label class="contacto__label" for="motivo">Motivo de contacto</label>
+                <select class="contacto__input" name="motivo" id="motivo">
+                  <option value="seleccionMotivo" disabled selected>Seleccion su motivo</option>
+                  <option value="consulta">Consulta</option>
+                  <option value="sugerencia">Sugerencia</option>
+                  <option value="reclamo">Reclamo</option>
+                </select>
+              </div>
+      
+              <div class="contacto__rellenar">
+                <label class="contacto__label" for="img">Adjuntar imagen</label>
+                <input class="contacto__input" type="file" id="img">
+              </div>
+    
+              <div class="contacto__rellenar">
+                <label class="contacto__label" for="mensaje">Mensaje</label>
+                <textarea class="contacto__input contacto__input--textarea" id="mensaje"></textarea>
+              </div>
+            </div>
+          </form>
+    
+          <div class="mapContainer">
+            <div class="mapContainer__info">
+              <div>
+                <span class="mapContainer__span">Tel: </span><a class="mapContainer__a" href="tel:1129384756">1129384756</a>
+              </div>
+              <div>
+                <span class="mapContainer__span">Email: </span><a class="mapContainer__a" href="mailto:maki.contacto@gmail.com">maki.contacto@gmail.com</a>
+              </div>
+            </div>
+    
+            <iframe
+              class="map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.016890936082!2d-58.38643594579392!3d-34.603734387966355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses-419!2sar!4v1715357129862!5m2!1ses-419!2sar"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
       <!--sobreNosotros-->
     </main>
     <!--MAIN-->
