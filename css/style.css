@@ -1157,7 +1157,7 @@ input:focus {
   }
  }
 
-.contacto__input:hover {
+.contacto__input:hover, .contacto__input:focus {
   border: 0.1rem solid var(--secundario);
   outline: none;
 }
@@ -1174,6 +1174,18 @@ input:focus {
   .contacto__input--textarea {
     height: 20rem;
   }
+}
+
+.contacto__enviar{
+  background-color: var(--primario);
+  color: var(--blanco);
+  width: 10rem;
+  height: 4rem;
+  font-size: 1.7rem;
+}
+.contacto__enviar:hover{
+  cursor: pointer;
+  animation: buttonAnimation 0.3s linear 1 forwards;
 }
 
 .mapContainer {
