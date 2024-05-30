@@ -1,18 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/style.css" type="text/css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
-    />
-    <link rel="icon" type="image/icon" href="../assets/icon/logoMaki.ico"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Productos de computación con filtros para conseguir el producto que más se adeque a tus necesidades">
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+    <link rel="icon" type="image/icon" href="../assets/icon/logoMaki.ico">
     <title>Computación</title>
   </head>
   <body>
@@ -48,14 +41,14 @@
             type="search"
             name="search"
             id="search"
-          />
+          >
         </div>
         <!--Buscador-->
 
         <!--nav-->
         <nav class="nav">
           <!--nav para celulares y tablets-->
-          <input type="checkbox" id="btn-menu" />
+          <input type="checkbox" id="btn-menu">
           <div class="container-menu">
             <div class="cont-menu">
               <div class="cont-menu__container">
@@ -245,13 +238,13 @@
 
           <!--nav para pc-->
           <div class="nav__pc">
-            <a class="nav__pc__enlaces" href="./tv_audio.html"
-              >TV & Audio</a
-            >
+            <a class="nav__pc__enlaces" href="./tv_audio.html">TV & Audio</a>
 
             <a class="nav__pc__enlaces" href="./moviles.html">Moviles</a>
 
-            <a class="nav__pc__enlaces nav__pc__enlaces--active" href="./computacion.html"
+            <a
+              class="nav__pc__enlaces nav__pc__enlaces--active"
+              href="./computacion.html"
               >Computación</a
             >
 
@@ -314,96 +307,92 @@
     <main class="conteiner_main">
       <!--filtros-->
       <section class="section_filtros">
-        <h3>Filtros</h3>
-        <div>
+        <h3 class="filtros_div">Filtros</h3>
+        <div class="filtros_div">
           <h2>Marca</h2>
+          <div class="filtros_div__texto">
+            <input id="samsung" type="checkbox">
+            <label for="samsung">Samsung</label>
+          </div>
           <div>
-          <div>
-            <input type="checkbox" />
-            <label for="Samsung">Samsung</label>
+            <input id="legion" type="checkbox">
+            <label for="legion">Legion</label>
           </div>
 
-          <div>
-            <input type="checkbox" />
-            <label for="Legion">Legion</label>
+          <div class="filtros_div__texto">
+            <input id="gamer" type="checkbox">
+            <label for="gamer">Gamer</label>
           </div>
 
-          <div>
-            <input type="checkbox" />
-            <label for="Gamer">Gamer</label>
-          </div>
-
-          <div>
-            <input type="checkbox" />
-            <label for="Intel">Intel</label>
+          <div class="filtros_div__texto">
+            <input id="intel" type="checkbox">
+            <label for="intel">Intel</label>
           </div>
         </div>
-      </div>
 
         <div>
-          <h2>Color</h2>
-          <div>
-          <div> 
-            <input type="checkbox" />
-            <label for="gris">gris</label>
-          </div>
-
-          <div>
-            <input type="checkbox" />
-            <label for="negro">negro</label>
-          </div>
-
-          <div>
-            <input type="checkbox" />
-            <label for="blanco">blanco</label>
-          </div>
-
-          <div>
-            <input type="checkbox" />
-            <label for="">marca</label>
-          </div>
-        </div>
-      </div>
-      
-        <div>
-          <h2>Gama</h2>
           <div class="filtros_div">
-            <div> 
-            <input type="checkbox" />
-            <label for="baja">baja</label>
-          </div>
+            <h2>Color</h2>
+            <div class="filtros_div__texto">
+              <input id="gris" type="checkbox">
+              <label for="gris">Gris</label>
+            </div>
 
-          <div>
-            <input type="checkbox" />
-            <label for="media">media</label>
-          </div>
+            <div class="filtros_div__texto">
+              <input id="negro" type="checkbox">
+              <label for="negro">Negro</label>
+            </div>
 
-          <div>
-            <input type="checkbox" />
-            <label for="alta">alta</label>
-          </div>
+            <div class="filtros_div__texto">
+              <input id="blanco" type="checkbox">
+              <label for="blanco">Blanco</label>
+            </div>
 
-          <div>
-            <input type="checkbox" />
-            <label for="entuciasta">entuciasta</label>
+            <div class="filtros_div__texto">
+              <input id="azul" type="checkbox">
+              <label for="azul">Azul</label>
+            </div>
           </div>
         </div>
-      </div>
-     
+
+        <div>
+          <div class="filtros_div">
+            <h2>Gama</h2>
+            <div class="filtros_div__texto">
+              <input id="baja" type="checkbox">
+              <label for="baja">Baja</label>
+            </div>
+
+            <div class="filtros_div__texto">
+              <input id="media" type="checkbox">
+              <label for="media">Media</label>
+            </div>
+
+            <div class="filtros_div__texto">
+              <input id="alta" type="checkbox">
+              <label for="alta">Alta</label>
+            </div>
+
+            <div class="filtros_div__texto">
+              <input id="entuciasta" type="checkbox">
+              <label for="entuciasta">Entuciasta</label>
+            </div>
+          </div>
+        </div>
       </section>
       <!--filtros-->
 
       <!--productosExhibidos-->
-      <section>
+      <div>
         <!--orden-->
-        <div>
-          <p>Ordenar por</p>
-          <select name="order" id="">
-            <option value="">Relevancia</option>
-            <option value="">Más reciente</option>
-            <option value="">Más antiguo</option>
-            <option value="">A - Z</option>
-            <option value="">Z - A</option>
+        <div class="ordenarPor">
+          <label for="order">Ordenar por</label>
+          <select name="order" id="order">
+            <option value="relevancia">Relevancia</option>
+            <option value="masReciente">Más reciente</option>
+            <option value="masAntiguo">Más antiguo</option>
+            <option value="az">A - Z</option>
+            <option value="za">Z - A</option>
           </select>
         </div>
         <!--orden-->
@@ -411,13 +400,16 @@
         <!--contenedorProductos-->
         <div class="contenedor_productos">
           <!--producto1-->
-          <div class="productos" >
+          <div class="productos">
             <img src="../assets/img/computacion1.webp" alt="producto1" />
 
             <div>
               <p>Monitor Curvo Samsung Gamer 54"</p>
-              <strong><p>$3.689.871,20</p></strong>
-              <button>Comprar</button>
+              <p class="productos__precio">$3.689.871,20</p>
+              
+              <div class="productos__button">
+                <a href="./carrito.html">Comprar</a>
+              </div>
             </div>
           </div>
           <!--producto1-->
@@ -428,20 +420,26 @@
 
             <div>
               <p>Monitor Curvo OLED Gamer 33,9"</p>
-              <strong><p>$1.299.999,20</p></strong>
-              <button>Comprar</button>
+              <p class="productos__precio">$1.299.999,20</p>
+              
+              <div class="productos__button">
+                <a href="./carrito.html">Comprar</a>
+              </div>
             </div>
           </div>
           <!--producto2-->
 
           <!--producto3-->
-          <div class="productos" >
-            <img src="../assets/img/computacion3.webp" alt="producto3"  />
+          <div class="productos">
+            <img src="../assets/img/computacion3.webp" alt="producto3" />
 
             <div>
               <p>Legion 5i Pro Gen 7 Intel (16") con RTX 3060</p>
-              <strong><p>$ 2.299.999,00</p></strong>
-              <button>Comprar</button>
+              <p class="productos__precio">$ 2.299.999,00</p>
+              
+              <div class="productos__button">
+                <a href="./carrito.html">Comprar</a>
+              </div>
             </div>
           </div>
           <!--producto3-->
@@ -452,8 +450,11 @@
 
             <div>
               <p>Legion 5i Gen 9 Intel (16") con RTX 4060</p>
-              <strong><p>$ 3.499.999,0</p></strong>
-              <button>Comprar</button>
+              <p class="productos__precio">$ 3.499.999,0</p>
+              
+              <div class="productos__button">
+                <a href="./carrito.html">Comprar</a>
+              </div>
             </div>
           </div>
           <!--producto4-->
@@ -464,8 +465,11 @@
 
             <div>
               <p>Computadora Completa Intel Core I5 Gb 480 ssd Monitor 19</p>
-              <strong><p>$ 462.590,90</p></strong>
-              <button>Comprar</button>
+              <p class="productos__precio">$ 462.590,90</p>
+              
+              <div class="productos__button">
+                <a href="./carrito.html">Comprar</a>
+              </div>
             </div>
           </div>
           <!--producto5-->
@@ -476,8 +480,11 @@
 
             <div>
               <p>PC armada Gamer Amd Ryzen 5 5600/16gb/480gb/off+Wind10/wifi</p>
-              <strong><p>$ 550.000,90</p></strong>
-              <button>Comprar</button>
+              <p class="productos__precio">$ 550.000,90</p>
+              
+              <div class="productos__button">
+                <a href="./carrito.html">Comprar</a>
+              </div>
             </div>
           </div>
           <!--producto6-->
@@ -488,8 +495,11 @@
 
             <div>
               <p>Auriculares Headset Gamer Pc Ps4 con Microfono</p>
-              <strong><p>$ 550.000,90</p></strong>
-              <button>Comprar</button>
+              <p class="productos__precio">$ 550.000,90</p>
+              
+              <div class="productos__button">
+                <a href="./carrito.html">Comprar</a>
+              </div>
             </div>
           </div>
           <!--producto7-->
@@ -500,8 +510,11 @@
 
             <div>
               <p>Combo Kit Gamer</p>
-              <strong><p>$ 550.000,90</p></strong>
-              <button>Comprar</button>
+              <p class="productos__precio">$ 550.000,90</p>
+              
+              <div class="productos__button">
+                <a href="./carrito.html">Comprar</a>
+              </div>
             </div>
           </div>
           <!--producto8-->
@@ -512,14 +525,17 @@
 
             <div>
               <p>Combo Gaming 3 En 1 pc Español</p>
-              <strong><p>$ 550.000,90</p></strong>
-              <button>Comprar</button>
+              <p class="productos__precio">$ 550.000,90</p>
+              
+              <div class="productos__button">
+                <a href="./carrito.html">Comprar</a>
+              </div>
             </div>
           </div>
           <!--producto9-->
         </div>
         <!--productos-->
-      </section>
+      </div>
       <!--productosExhibidos-->
     </main>
     <!--MAIN-->
@@ -552,10 +568,10 @@
               <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
               <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
             </svg>
-  
+
             <span class="footer__ico-span">Usuario</span>
           </a>
-  
+
           <a href="./carrito.html">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -575,10 +591,10 @@
               <path d="M17 17h-11v-14h-2" />
               <path d="M6 5l14 1l-1 7h-13" />
             </svg>
-  
+
             <span class="footer__ico-span">Carrito</span>
           </a>
-  
+
           <a href="./tv_audio.html">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -600,10 +616,10 @@
               <path d="M9 16v4" />
               <path d="M15 16v4" />
             </svg>
-  
+
             <span class="footer__ico-span">TV & Audio</span>
           </a>
-  
+
           <a href="./moviles.html">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -624,10 +640,10 @@
               <path d="M11 4h2" />
               <path d="M12 17v.01" />
             </svg>
-  
+
             <span class="footer__ico-span">Moviles</span>
           </a>
-  
+
           <a href="./computacion.html">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -647,10 +663,10 @@
                 d="M5 6m0 1a1 1 0 0 1 1 -1h12a1 1 0 0 1 1 1v8a1 1 0 0 1 -1 1h-12a1 1 0 0 1 -1 -1z"
               />
             </svg>
-  
+
             <span class="footer__ico-span">Computación</span>
           </a>
-  
+
           <a href="./sobreNosotros.html">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -672,11 +688,11 @@
               <path d="M5 5a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
               <path d="M3 13v-1a2 2 0 0 1 2 -2h2" />
             </svg>
-  
+
             <span class="footer__ico-span">Sobre nosotros</span>
           </a>
         </div>
-  
+
         <div class="footer__socialmedia">
           <!--instagram-->
           <p class="footer__seccion-titulo">Redes</p>
@@ -703,11 +719,11 @@
               <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
               <path d="M16.5 7.5l0 .01" />
             </svg>
-  
+
             <span class="footer__ico-span">Instagram</span>
           </a>
           <!--instagram-->
-  
+
           <!--facebook-->
           <a
             class="footer__medialinks"
@@ -730,11 +746,11 @@
                 d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"
               />
             </svg>
-  
+
             <span class="footer__ico-span">Facebook</span>
           </a>
           <!--facebook-->
-  
+
           <!--x-->
           <a
             class="footer__medialinks"
@@ -756,13 +772,12 @@
               <path d="M4 4l11.733 16h4.267l-11.733 -16z" />
               <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
             </svg>
-  
+
             <span class="footer__ico-span">X</span>
           </a>
           <!--x-->
         </div>
         <!--foooter_izquierda-->
-
       </div>
 
       <!--foooter_derecha-->
@@ -775,10 +790,5 @@
       <!--foooter_derecha-->
     </footer>
     <!--FOOTER-->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>
