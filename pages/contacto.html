@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Este es el carrito, donde podras ver todo lo seleccionado y finalizar tu compra si es que lo deseas">
+    <meta name="description" content="En esta pagina podras conocer a fondo nuestra historia, valores y compromiso">
     <link rel="stylesheet" href="../css/style.css" type="text/css">
     <link rel="icon" type="image/icon" href="../assets/icon/logoMaki.ico">
-    <title>Carrito</title>
+    <title>Sobre nosotros</title>
   </head>
   <body>
     <!--HEADER-->
@@ -84,7 +84,7 @@
                     stroke-width="2"
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                    class="icon icon-tabler icons-tabler-outline icon-tabler-shopping-cart nav__ico nav__ico--active"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-shopping-cart nav__ico"
                   >
                     <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                     <path d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
@@ -93,7 +93,7 @@
                     <path d="M6 5l14 1l-1 7h-13" />
                   </svg>
 
-                  <span class="nav__span nav__span--active">Carrito</span>
+                  <span class="nav__span">Carrito</span>
                 </a>
 
                 <a href="./tv_audio.html" class="cont-menu__enlaces">
@@ -179,7 +179,7 @@
                     stroke-width="2"
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                    class="icon icon-tabler icons-tabler-outline icon-tabler-users-group nav__ico"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-users-group nav__ico nav__ico--active"
                   >
                     <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                     <path d="M10 13a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
@@ -190,7 +190,7 @@
                     <path d="M3 13v-1a2 2 0 0 1 2 -2h2" />
                   </svg>
 
-                  <span class="nav__span">Sobre nosotros</span>
+                  <span class="nav__span nav__span--active">Sobre nosotros</span>
                 </a>
 
                 <a href="./contacto.html" class="cont-menu__enlaces">
@@ -269,7 +269,7 @@
               >Computación</a
             >
 
-            <a class="nav__pc__enlaces" href="./sobreNosotros.html">
+            <a class="nav__pc__enlaces nav__pc__enlaces--active" href="./sobreNosotros.html">
               Sobre nosotros</a
             >
           </div>
@@ -326,7 +326,7 @@
               stroke-width="2"
               stroke-linecap="round"
               stroke-linejoin="round"
-              class="icon icon-tabler icons-tabler-outline icon-tabler-shopping-cart header__ico header__ico--active"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-shopping-cart header__ico"
             >
               <path stroke="none" d="M0 0h24v24H0z" fill="none" />
               <path d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
@@ -342,280 +342,80 @@
     <!--HEADER-->
 
     <!--MAIN-->
-    <main class="main__containerCart">
-      <!--titulo-->
-      <h1 class="titulo__compra">Carrito</h1>
-      <!--titulo-->
-
-      <div class="carritos">
-        <!--productosSeleccionados-->
-        <section class="carrito__container">
-          <!--primerProductoCarrito-->
-          <div class="carrito">
-            <!--imgProducto-->
-            <div class="carrito__container-img">
-              <img
-                loading="lazy"
-                class="img__carrito"
-                src="../assets/img/celular1.webp"
-                alt="producto1"
-              >
+    <main class="main__containerUs">
+      <!--Titulo-->
+      <h1 class="titulo__us">Sobre nosotros</h1>
+      <!--Titulo-->
+        <h2 class="infoSobreNosotros__titulo">Contactanos</h2>
+        <div class="infoSobreNosotros__container">
+          <form class="contacto" action="#">
+            <div class="contacto__container">
+              <div class="contacto__rellenar">
+                <label class="contacto__label" for="nombre">Nombre y Apellido</label>
+                <input class="contacto__input" type="text" autocomplete="name" id="nombre">
+              </div>
+      
+              <div class="contacto__rellenar">
+                <label class="contacto__label" for="email">Email</label>
+                <input class="contacto__input" type="email" autocomplete="email" id="email">
+              </div>
+      
+              <div class="contacto__rellenar">
+                <label class="contacto__label" for="telefono">Teléfono</label>
+                <input class="contacto__input" type="tel" autocomplete="tel" id="telefono">
+              </div>
+      
+              <div class="contacto__rellenar">
+                <label class="contacto__label" for="motivo">Motivo de contacto</label>
+                <select class="contacto__input" name="motivo" id="motivo">
+                  <option value="seleccionMotivo" disabled selected>Seleccione su motivo</option>
+                  <option value="consulta">Consulta</option>
+                  <option value="sugerencia">Sugerencia</option>
+                  <option value="reclamo">Reclamo</option>
+                </select>
+              </div>
+      
+              <div class="contacto__rellenar">
+                <label class="contacto__label" for="img">Adjuntar imagen</label>
+                <input class="contacto__input" type="file" id="img">
+              </div>
+    
+              <div class="contacto__rellenar">
+                <label class="contacto__label" for="mensaje">Mensaje</label>
+                <textarea class="contacto__input contacto__input--textarea" id="mensaje"></textarea>
+              </div>
             </div>
-            <!--imgProducto-->
-
-            <!--infoProducto-->
-            <div class="info__containerCarrito">
+            <div class="contacto__checkbox">
               <div>
-                <h2 class="h2--carrito">Moto G84 5G</h2>
-                <p>Negro</p>
-                <p>$549.999</p>
+                <input type="checkbox" name="exp" id="exp"><label class="contacto__checkbox__label" for="exp">Acepto compartir mis datos para mejorar la experiencia</label>
               </div>
-
-              <div class="cantidad___carrito">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  style="fill: #e384ff"
-                >
-                  <path d="M5 11h14v2H5z"></path>
-                </svg>
-
-                <input
-                  class="input__carrito"
-                  type="number"
-                  value="2"
-                  min="0"
-                  id="cant_p1"
-                >
-
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  style="fill: #e384ff"
-                >
-                  <path d="M19 11h-6V5h-2v6H5v2h6v6h2v-6h6z"></path>
-                </svg>
-              </div>
-            </div>
-            <!--infoProducto-->
-
-            <!--borrarProducto-->
-            <div class="borrar_producto">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                style="fill: #e384ff"
-              >
-                <path
-                  d="M6 7H5v13a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7H6zm4 12H8v-9h2v9zm6 0h-2v-9h2v9zm.618-15L15 2H9L7.382 4H3v2h18V4z"
-                ></path>
-              </svg>
-
-              <p>$1.099.998</p>
-            </div>
-            <!--borrarProducto-->
-          </div>
-          <!--primerProductoCarrito-->
-
-          <!--segundoProductoCarrito-->
-          <div class="carrito">
-            <!--imgProducto-->
-            <div class="carrito__container-img">
-              <img
-                loading="lazy"
-                class="img__carrito"
-                src="../assets/img/tele4.webp"
-                alt="producto1"
-              >
-            </div>
-            <!--imgProducto-->
-
-            <!--infoProducto-->
-            <div class="info__containerCarrito">
               <div>
-                <h2 class="h2--carrito">Motorola Smart TV 55"</h2>
-                <p>Negro</p>
-                <p>$678.999</p>
-              </div>
-
-              <div class="cantidad___carrito">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  style="fill: #e384ff"
-                >
-                  <path d="M5 11h14v2H5z"></path>
-                </svg>
-
-                <input
-                  class="input__carrito"
-                  type="number"
-                  value="3"
-                  min="0"
-                  id="cant_p2"
-                >
-
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  style="fill: #e384ff"
-                >
-                  <path d="M19 11h-6V5h-2v6H5v2h6v6h2v-6h6z"></path>
-                </svg>
+                <input type="checkbox" name="novProm" id="novProm"><label class="contacto__checkbox__label" for="novProm">Me gustaría recibir novedades y promociones</label>
               </div>
             </div>
-            <!--infoProducto-->
-
-            <!--borrarProducto-->
-            <div class="borrar_producto">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                style="fill: #e384ff"
-              >
-                <path
-                  d="M6 7H5v13a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7H6zm4 12H8v-9h2v9zm6 0h-2v-9h2v9zm.618-15L15 2H9L7.382 4H3v2h18V4z"
-                ></path>
-              </svg>
-
-              <p>$2.036.997</p>
-            </div>
-            <!--borrarProducto-->
-          </div>
-          <!--segundoProductoCarrito-->
-
-          <!--tercerProductoCarrito-->
-          <div class="carrito">
-            <!--imgProducto-->
-            <div class="carrito__container-img">
-              <img
-                loading="lazy"
-                class="img__carrito"
-                src="../assets/img/computacion2.webp"
-                alt="producto1"
-              >
-            </div>
-            <!--imgProducto-->
-
-            <!--infoProducto-->
-            <div class="info__containerCarrito">
+            <input class="contacto__enviar" type="submit" name="enviar" id="enviar">
+          </form>
+    
+          <div class="mapContainer">
+            <div class="mapContainer__info">
               <div>
-                <h2 class="h2--carrito">Monitor Smart M8 32" 4K</h2>
-                <p>Negro</p>
-                <p>$1.199.999</p>
+                <span class="mapContainer__span">Tel: </span><a class="mapContainer__a" href="tel:1129384756">1129384756</a>
               </div>
-
-              <div class="cantidad___carrito">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  style="fill: #e384ff"
-                >
-                  <path d="M5 11h14v2H5z"></path>
-                </svg>
-
-                <input
-                  class="input__carrito"
-                  type="number"
-                  value="4"
-                  min="0"
-                  id="cant_p3"
-                >
-
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  style="fill: #e384ff"
-                >
-                  <path d="M19 11h-6V5h-2v6H5v2h6v6h2v-6h6z"></path>
-                </svg>
+              <div>
+                <span class="mapContainer__span">Email: </span><a class="mapContainer__a" href="mailto:maki.contacto@gmail.com">maki.contacto@gmail.com</a>
               </div>
             </div>
-            <!--infoProducto-->
-
-            <!--borrarProducto-->
-            <div class="borrar_producto">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                style="fill: #e384ff"
-              >
-                <path
-                  d="M6 7H5v13a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7H6zm4 12H8v-9h2v9zm6 0h-2v-9h2v9zm.618-15L15 2H9L7.382 4H3v2h18V4z"
-                ></path>
-              </svg>
-
-              <p>$4.799.996</p>
-            </div>
-            <!--borrarProducto-->
+    
+            <iframe
+              class="map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.016890936082!2d-58.38643594579392!3d-34.603734387966355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses-419!2sar!4v1715357129862!5m2!1ses-419!2sar"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
-          <!--tercerProductoCarrito-->
-        </section>
-        <!--productosSeleccionados-->
-
-        <!--totalCompra-->
-        <section class="finalizarCompra">
-          <!--envio-->
-          <div class="envio">
-            <h2 class="titulo__compra">Envío</h2>
-
-            <div class="codigoPostal">
-              <label for="cp">Codigo postal</label>
-              <input
-                class="input input--carrito"
-                type="text"
-                name="cp"
-                id="cp"
-              >
-              <input
-                class="myButton myButton--carrito"
-                type="button"
-                value="Aplicar"
-              >
-            </div>
-          </div>
-          <!--envio-->
-
-          <!--totalCompra-->
-          <div class="total">
-            <h2 class="titulo__compra">Total</h2>
-            <p>$7.936.991</p>
-          </div>
-          <!--totalCompra-->
-
-          <!--finalizarCompra-->
-          <div class="finalizar">
-            <a class="alternativa__enlace" href="../index.html"
-              >elegir más productos</a
-            >
-            <input
-              class="myButton myButton--carrito"
-              type="button"
-              value="Finalizar compra"
-            >
-          </div>
-          <!--finalizarCompra-->
-        </section>
-        <!--totalCompra-->
-      </div>
+        </div>
     </main>
     <!--MAIN-->
 
