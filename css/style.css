@@ -1041,48 +1041,18 @@ input:focus {
     width: 25%;
   }
 }
+/*--------------------------------------------------------------SOBRENOSOTROS.HTML--------------------------------------------------------------*/
 
-.infoSobreNosotros {
+/*--------------------------------------------------------------CONTACTO.HTML--------------------------------------------------------------*/
+.main__containerContacto {
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  gap: 5rem;
 }
 
-@media (min-width: 1024px) {
-  .infoSobreNosotros {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 80%;
-  }
-}
-@media (min-width: 1280px) {
-  .infoSobreNosotros {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-  }
-}
-@media (min-width: 1750px) {
-  .infoSobreNosotros {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 80%;
-  }
-}
-
-.infoSobreNosotros__titulo {
-  margin: 3rem 0;
-  border-bottom: 0.4rem solid var(--secundario);
-  border-radius: 2px;
-  line-height: 4rem;
-  text-align: center;
-}
-
-.infoSobreNosotros__container {
+.infoContacto__container {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -1090,7 +1060,7 @@ input:focus {
 }
 
 @media (min-width: 1280px) {
-  .infoSobreNosotros__container {
+  .infoContacto__container {
     width: 100%;
     flex-direction: row;
   }
@@ -1303,7 +1273,7 @@ input:focus {
     width: 100%;
   }
 }
-/*--------------------------------------------------------------SOBRENOSOTROS.HTML--------------------------------------------------------------*/
+/*--------------------------------------------------------------CONTACTO.HTML--------------------------------------------------------------*/
 
 /*--------------------------------------------------------------CARRITO.HTML--------------------------------------------------------------*/
 .main__containerCart {
