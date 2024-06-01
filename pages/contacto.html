@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="En esta pagina podras conocer a fondo nuestra historia, valores y compromiso">
+    <meta name="description" content="Contaras con información para contactarnos e ir a nuestra sucursal">
     <link rel="stylesheet" href="../css/style.css" type="text/css">
     <link rel="icon" type="image/icon" href="../assets/icon/logoMaki.ico">
     <title>Sobre nosotros</title>
@@ -348,26 +348,57 @@
       <!--Titulo-->
 
         <div class="infoContacto__container">
-          <form class="contacto" action="#">
+          <form class="contacto" action="#" name="form" data-form >
             <div class="contacto__container">
               <div class="contacto__rellenar">
                 <label class="contacto__label" for="nombre">Nombre y Apellido</label>
-                <input class="contacto__input" type="text" autocomplete="name" id="nombre">
+                <input 
+                class="contacto__input" 
+                name="nombre"
+                type="text" 
+                autocomplete="name" 
+                id="nombre"
+                placeholder="Ingese su/s Nombre/s"
+                minlength="3"
+                required>
+                <span class="mensaje-error"></span>
               </div>
       
               <div class="contacto__rellenar">
                 <label class="contacto__label" for="email">Email</label>
-                <input class="contacto__input" type="email" autocomplete="email" id="email">
+                <input 
+                class="contacto__input" 
+                name="email"
+                type="email" 
+                autocomplete="email" 
+                id="email"
+                placeholder="Ingrese su correo electronico"
+                minlength="4"
+                required>
+                <span class="mensaje-error"></span>
               </div>
       
               <div class="contacto__rellenar">
                 <label class="contacto__label" for="telefono">Teléfono</label>
-                <input class="contacto__input" type="tel" autocomplete="tel" id="telefono">
+                <input 
+                class="contacto__input" 
+                name="telefono"
+                type="text" 
+                autocomplete="tel" 
+                id="telefono"
+                minlength="6"
+                placeholder="Ingrese numero telefonico" 
+                required>
+                <span class="mensaje-error"></span>
               </div>
       
               <div class="contacto__rellenar">
                 <label class="contacto__label" for="motivo">Motivo de contacto</label>
-                <select class="contacto__input" name="motivo" id="motivo">
+                <select 
+                class="contacto__input" 
+                name="motivo" 
+                id="motivo"
+                required>
                   <option value="seleccionMotivo" disabled selected>Seleccione su motivo</option>
                   <option value="consulta">Consulta</option>
                   <option value="sugerencia">Sugerencia</option>
@@ -382,7 +413,15 @@
     
               <div class="contacto__rellenar">
                 <label class="contacto__label" for="mensaje">Mensaje</label>
-                <textarea class="contacto__input contacto__input--textarea" id="mensaje"></textarea>
+                <textarea 
+                class="contacto__input contacto__input--textarea" 
+                id="mensaje"
+                name="contacto"
+                type="text" 
+                minlength="15"
+                placeholder="Ingrese un Texto" 
+                required></textarea>
+                <span class="mensaje-error"></span>
               </div>
             </div>
             <div class="contacto__checkbox">
@@ -394,6 +433,7 @@
               </div>
             </div>
             <input class="contacto__enviar" type="submit" name="enviar" id="enviar">
+            <span class="mensaje-error"></span>
           </form>
     
           <div class="mapContainer">
@@ -690,6 +730,6 @@
       <!--foooter_derecha-->
     </footer>
     <!--FOOTER-->
-    <script src="../js/main.js" type="module"></script>
+    <script src="../js/contacto.js" type="module"></script>
   </body>
 </html>

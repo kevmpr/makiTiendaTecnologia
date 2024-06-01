@@ -7,14 +7,11 @@ formulario.addEventListener("submit", (e) => {
   e.preventDefault();
   const listaRespuestas = {
     nombre: e.target.elements["nombre"].value,
-    apellido: e.target.elements["apellido"].value,
     email: e.target.elements["email"].value,
     telefono: e.target.elements["telefono"].value,
-    contraseña: e.target.elements["contraseña"].value,
-  
+    contacto: e.target.elements["contacto"].value,
   };
-  localStorage.setItem("registro", JSON.stringify(listaRespuestas));
-  window.location.href = "./inicioSesion.html";
+  window.location.href = "";
 });
 
 camposDeFormulario.forEach((campo) => {
