@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Productos de computación con filtros para conseguir el producto que más se adeque a tus necesidades">
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+    <link rel="icon" type="image/icon" href="../assets/icon/logoMaki.ico">
+    <title>Computación</title>
+  </head>
+  <body>
+    <!--HEADER-->
+    <header class="header_container">
+      <!--logo-->
+      <a class="header__logo" href="../index.html">Maki</a>
+      <!--logo-->
+
+      <div class="nav__container">
+        <!--Buscador-->
+        <div class="search__container">
+          <label for="search"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-search header__ico"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+              <path d="M21 21l-6 -6" />
+            </svg>
+          </label>
+          <input
+            class="input__search"
+            type="search"
+            name="search"
+            id="search"
+          >
+        </div>
+        <!--Buscador-->
+
+        <!--nav-->
+        <nav class="nav">
+          <!--nav para celulares y tablets-->
+          <input type="checkbox" id="btn-menu">
+          <div class="container-menu">
+            <div class="cont-menu">
+              <div class="cont-menu__container">
+                <a href="./inicioSesion.html" class="cont-menu__enlaces">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-user nav__ico"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
+                    <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                  </svg>
+
+                  <span class="nav__span">Usuario</span>
+                </a>
+
+                <a href="./carrito.html" class="cont-menu__enlaces">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-shopping-cart nav__ico"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                    <path d="M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                    <path d="M17 17h-11v-14h-2" />
+                    <path d="M6 5l14 1l-1 7h-13" />
+                  </svg>
+
+                  <span class="nav__span">Carrito</span>
+                </a>
+
+                <a href="./tv_audio.html" class="cont-menu__enlaces">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-device-desktop nav__ico"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path
+                      d="M3 5a1 1 0 0 1 1 -1h16a1 1 0 0 1 1 1v10a1 1 0 0 1 -1 1h-16a1 1 0 0 1 -1 -1v-10z"
+                    />
+                    <path d="M7 20h10" />
+                    <path d="M9 16v4" />
+                    <path d="M15 16v4" />
+                  </svg>
+
+                  <span class="nav__span">TV & Audio</span>
+                </a>
+
+                <a href="./moviles.html" class="cont-menu__enlaces">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-device-mobile nav__ico"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path
+                      d="M6 5a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2v-14z"
+                    />
+                    <path d="M11 4h2" />
+                    <path d="M12 17v.01" />
+                  </svg>
+
+                  <span class="nav__span">Moviles</span>
+                </a>
+
+                <a href="./computacion.html" class="cont-menu__enlaces">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-device-laptop nav__ico nav__ico--active"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M3 19l18 0" />
+                    <path
+                      d="M5 6m0 1a1 1 0 0 1 1 -1h12a1 1 0 0 1 1 1v8a1 1 0 0 1 -1 1h-12a1 1 0 0 1 -1 -1z"
+                    />
+                  </svg>
+
+                  <span class="nav__span nav__span--active">Computación</span>
+                </a>
+
+                <a href="./sobreNosotros.html" class="cont-menu__enlaces">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-users-group nav__ico"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M10 13a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                    <path d="M8 21v-1a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v1" />
+                    <path d="M15 5a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                    <path d="M17 10h2a2 2 0 0 1 2 2v1" />
+                    <path d="M5 5a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                    <path d="M3 13v-1a2 2 0 0 1 2 -2h2" />
+                  </svg>
+
+                  <span class="nav__span">Sobre nosotros</span>
+                </a>
+
+                <a href="./contacto.html" class="cont-menu__enlaces">
+                  <svg  
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"  
+                    height="24"  
+                    viewBox="0 0 24 24"  
+                    fill="none"  
+                    stroke="currentColor"  
+                    stroke-width="2"  
+                    stroke-linecap="round"  
+                    stroke-linejoin="round"  
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-phone nav__ico">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+                  </svg>
+
+                  <span class="nav__span">Contacto</span>
+                </a>
+              </div>
+              <label for="btn-menu" class="icon-close cont-menu__label"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-x header__ico"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M18 6l-12 12" />
+                  <path d="M6 6l12 12" />
+                </svg>
+              </label>
+            </div>
+          </div>
+          <div class="btn-menu">
+            <label for="btn-menu" class="btn-menu__entrar"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2 header__ico"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M4 6l16 0" />
+                <path d="M4 12l16 0" />
+                <path d="M4 18l16 0" />
+              </svg>
+            </label>
+          </div>
+          <!--nav para celulares y tablets-->
+
+          <!--nav para pc-->
+          <div class="nav__pc">
+            <a class="nav__pc__enlaces" href="./tv_audio.html">TV & Audio</a>
+
+            <a
+              class="nav__pc__enlaces"
+              href="./moviles.html"
+              >Moviles</a
+            >
+
+            <a class="nav__pc__enlaces nav__pc__enlaces--active" href="./computacion.html"
+              >Computación</a
+            >
+
+            <a class="nav__pc__enlaces" href="./sobreNosotros.html">
+              Sobre nosotros</a
+            >
+          </div>
+          <!--nav para pc-->
+        </nav>
+        <!--nav-->
+        
+        <!--carrito/usuario-->
+        <div class="carritoUsuario">
+          <a href="./contacto.html">
+            <svg  
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"  
+              height="24"  
+              viewBox="0 0 24 24"  
+              fill="none"  
+              stroke="currentColor"  
+              stroke-width="2"  
+              stroke-linecap="round"  
+              stroke-linejoin="round"  
+              class="icon icon-tabler icons-tabler-outline icon-tabler-phone header__ico">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+            </svg>
+          </a>
+
+          <a href="./inicioSesion.html"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-user header__ico"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
+              <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+            </svg>
+          </a>
+
+          <a href="./carrito.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-shopping-cart header__ico"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+              <path d="M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+              <path d="M17 17h-11v-14h-2" />
+              <path d="M6 5l14 1l-1 7h-13" />
+            </svg>
+          </a>
+        </div>
+        <!--carrito/usuario-->
+      </div>
+    </header>
+    <!--HEADER-->
+
+    <!--MAIN-->
+    <main class="conteiner_main">
+      <!--filtros-->
+      <section class="section_filtros">
+        <h3 class="filtros_div">Filtros</h3>
+        <div class="filtros_div">
+          <h2>Marca</h2>
+          <div class="filtros_div__texto">
+            <input id="samsung" type="checkbox">
+            <label for="samsung">Samsung</label>
+          </div>
+          <div>
+            <input id="legion" type="checkbox">
+            <label for="legion">Legion</label>
+          </div>
+
+          <div class="filtros_div__texto">
+            <input id="gamer" type="checkbox">
+            <label for="gamer">Gamer</label>
+          </div>
+
+          <div class="filtros_div__texto">
+            <input id="intel" type="checkbox">
+            <label for="intel">Intel</label>
+          </div>
+        </div>
+
+        <div>
+          <div class="filtros_div">
+            <h2>Color</h2>
+            <div class="filtros_div__texto">
+              <input id="gris" type="checkbox">
+              <label for="gris">Gris</label>
+            </div>
+
+            <div class="filtros_div__texto">
+              <input id="negro" type="checkbox">
+              <label for="negro">Negro</label>
+            </div>
+
+            <div class="filtros_div__texto">
+              <input id="blanco" type="checkbox">
+              <label for="blanco">Blanco</label>
+            </div>
+
+            <div class="filtros_div__texto">
+              <input id="azul" type="checkbox">
+              <label for="azul">Azul</label>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="filtros_div">
+            <h2>Gama</h2>
+            <div class="filtros_div__texto">
+              <input id="baja" type="checkbox">
+              <label for="baja">Baja</label>
+            </div>
+
+            <div class="filtros_div__texto">
+              <input id="media" type="checkbox">
+              <label for="media">Media</label>
+            </div>
+
+            <div class="filtros_div__texto">
+              <input id="alta" type="checkbox">
+              <label for="alta">Alta</label>
+            </div>
+
+            <div class="filtros_div__texto">
+              <input id="entuciasta" type="checkbox">
+              <label for="entuciasta">Entuciasta</label>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--filtros-->
+
+      <!--productosExhibidos-->
+      <div>
+        <!--orden-->
+        <div class="ordenarPor">
+          <label for="order">Ordenar por</label>
+          <select name="order" id="order">
+            <option value="relevancia">Relevancia</option>
+            <option value="masReciente">Más reciente</option>
+            <option value="masAntiguo">Más antiguo</option>
+            <option value="az">A - Z</option>
+            <option value="za">Z - A</option>
+          </select>
+        </div>
+        <!--orden-->
+
+        <!--contenedorProductos-->
+        <div class="contenedor_productos">
+          <!--producto1-->
+          <div class="productos">
+            <img src="../assets/img/computacion1.webp" alt="producto1">
+
+            <div>
+              <p>Monitor Curvo Samsung Gamer 54"</p>
+              <p class="productos__precio">$3.689.871,20</p>
+              
+              <div class="productos__button">
+                <a href="./carrito.html">Comprar</a>
+              </div>
+            </div>
+          </div>
+          <!--producto1-->
+
+          <!--producto2-->
+          <div class="productos">
+            <img src="../assets/img/computacion2.webp" alt="producto2">
+
+            <div>
+              <p>Monitor Curvo OLED Gamer 33,9"</p>
+              <p class="productos__precio">$1.299.999,20</p>
+              
+              <div class="productos__button">
+                <a href="./carrito.html">Comprar</a>
+              </div>
+            </div>
+          </div>
+          <!--producto2-->
+
+          <!--producto3-->
+          <div class="productos">
+            <img src="../assets/img/computacion3.webp" alt="producto3">
+
+            <div>
+              <p>Legion 5i Pro Gen 7 Intel (16") con RTX 3060</p>
+              <p class="productos__precio">$ 2.299.999,00</p>
+              
+              <div class="productos__button">
+                <a href="./carrito.html">Comprar</a>
+              </div>
+            </div>
+          </div>
+          <!--producto3-->
+
+          <!--producto4-->
+          <div class="productos">
+            <img src="../assets/img/computacion4.webp" alt="producto4">
+
+            <div>
+              <p>Legion 5i Gen 9 Intel (16") con RTX 4060</p>
+              <p class="productos__precio">$ 3.499.999,0</p>
+              
+              <div class="productos__button">
+                <a href="./carrito.html">Comprar</a>
+              </div>
+            </div>
+          </div>
+          <!--producto4-->
+
+          <!--producto5-->
+          <div class="productos">
+            <img src="../assets/img/computacion5.webp" alt="producto5">
+
+            <div>
+              <p>Computadora Completa Intel Core I5 Gb 480 ssd Monitor 19</p>
+              <p class="productos__precio">$ 462.590,90</p>
+              
+              <div class="productos__button">
+                <a href="./carrito.html">Comprar</a>
+              </div>
+            </div>
+          </div>
+          <!--producto5-->
+
+          <!--producto6-->
+          <div class="productos">
+            <img src="../assets/img/computacion6.webp" alt="producto6">
+
+            <div>
+              <p>PC armada Gamer Amd Ryzen 5 5600/16gb/480gb/off+Wind10/wifi</p>
+              <p class="productos__precio">$ 550.000,90</p>
+              
+              <div class="productos__button">
+                <a href="./carrito.html">Comprar</a>
+              </div>
+            </div>
+          </div>
+          <!--producto6-->
+
+          <!--producto7-->
+          <div class="productos">
+            <img src="../assets/img/computacion7.webp" alt="producto7">
+
+            <div>
+              <p>Auriculares Headset Gamer Pc Ps4 con Microfono</p>
+              <p class="productos__precio">$ 550.000,90</p>
+              
+              <div class="productos__button">
+                <a href="./carrito.html">Comprar</a>
+              </div>
+            </div>
+          </div>
+          <!--producto7-->
+
+          <!--producto8-->
+          <div class="productos">
+            <img src="../assets/img/computacion8.webp" alt="producto8">
+
+            <div>
+              <p>Combo Kit Gamer</p>
+              <p class="productos__precio">$ 550.000,90</p>
+              
+              <div class="productos__button">
+                <a href="./carrito.html">Comprar</a>
+              </div>
+            </div>
+          </div>
+          <!--producto8-->
+
+          <!--producto9-->
+          <div class="productos">
+            <img src="../assets/img/computacion9.webp" alt="producto9">
+
+            <div>
+              <p>Combo Gaming 3 En 1 pc Español</p>
+              <p class="productos__precio">$ 550.000,90</p>
+              
+              <div class="productos__button">
+                <a href="./carrito.html">Comprar</a>
+              </div>
+            </div>
+          </div>
+          <!--producto9-->
+        </div>
+        <!--productos-->
+      </div>
+      <!--productosExhibidos-->
+    </main>
+    <!--MAIN-->
+
+    <!--FOOTER-->
+    <footer class="footer__container">
+      <!--foooter_izquierda-->
+      <div class="footer__logo">
+        <a class="header__logo header__logo--Mod" href="../index.html">Maki</a>
+        <span class="footer__span">by grupo14</span>
+      </div>
+
+      <div class="footer__secciones">
+        <div class="footer__enlaces">
+          <p class="footer__seccion-titulo">Paginas</p>
+          <a href="./inicioSesion.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-user"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
+              <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+            </svg>
+
+            <span class="footer__ico-span">Usuario</span>
+          </a>
+
+          <a href="./carrito.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-shopping-cart"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+              <path d="M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+              <path d="M17 17h-11v-14h-2" />
+              <path d="M6 5l14 1l-1 7h-13" />
+            </svg>
+
+            <span class="footer__ico-span">Carrito</span>
+          </a>
+
+          <a href="./tv_audio.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-device-desktop"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M3 5a1 1 0 0 1 1 -1h16a1 1 0 0 1 1 1v10a1 1 0 0 1 -1 1h-16a1 1 0 0 1 -1 -1v-10z"
+              />
+              <path d="M7 20h10" />
+              <path d="M9 16v4" />
+              <path d="M15 16v4" />
+            </svg>
+
+            <span class="footer__ico-span">TV & Audio</span>
+          </a>
+
+          <a href="./moviles.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-device-mobile"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M6 5a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2v-14z"
+              />
+              <path d="M11 4h2" />
+              <path d="M12 17v.01" />
+            </svg>
+
+            <span class="footer__ico-span">Moviles</span>
+          </a>
+
+          <a href="./computacion.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-device-laptop"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M3 19l18 0" />
+              <path
+                d="M5 6m0 1a1 1 0 0 1 1 -1h12a1 1 0 0 1 1 1v8a1 1 0 0 1 -1 1h-12a1 1 0 0 1 -1 -1z"
+              />
+            </svg>
+
+            <span class="footer__ico-span">Computación</span>
+          </a>
+
+          <a href="./sobreNosotros.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-users-group"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M10 13a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+              <path d="M8 21v-1a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v1" />
+              <path d="M15 5a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+              <path d="M17 10h2a2 2 0 0 1 2 2v1" />
+              <path d="M5 5a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+              <path d="M3 13v-1a2 2 0 0 1 2 -2h2" />
+            </svg>
+
+            <span class="footer__ico-span">Sobre nosotros</span>
+          </a>
+
+          <a href="./contacto.html">
+            <svg  
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"  
+              height="24"  
+              viewBox="0 0 24 24"  
+              fill="none"  
+              stroke="currentColor"  
+              stroke-width="2"  
+              stroke-linecap="round"  
+              stroke-linejoin="round"  
+              class="icon icon-tabler icons-tabler-outline icon-tabler-phone">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+            </svg>
+
+            <span class="footer__ico-span">Contacto</span>
+          </a>
+        </div>
+
+        <div class="footer__socialmedia">
+          <!--instagram-->
+          <p class="footer__seccion-titulo">Redes</p>
+          <a
+            class="footer__medialinks"
+            href="https://www.instagram.com/programacodoacodo/?hl=es"
+            target="_blank"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z"
+              />
+              <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+              <path d="M16.5 7.5l0 .01" />
+            </svg>
+
+            <span class="footer__ico-span">Instagram</span>
+          </a>
+          <!--instagram-->
+
+          <!--facebook-->
+          <a
+            class="footer__medialinks"
+            href="https://www.facebook.com/groups/135322965179495/?_rdr"
+            target="_blank"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-brand-facebook"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"
+              />
+            </svg>
+
+            <span class="footer__ico-span">Facebook</span>
+          </a>
+          <!--facebook-->
+
+          <!--x-->
+          <a
+            class="footer__medialinks"
+            href="https://twitter.com/EducacionBA/status/1404807225420435463?lang=es"
+            target="_blank"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-brand-x"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M4 4l11.733 16h4.267l-11.733 -16z" />
+              <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
+            </svg>
+
+            <span class="footer__ico-span">X</span>
+          </a>
+
+          
+          <!--x-->
+        </div>
+        <!--foooter_izquierda-->
+      </div>
+
+      <!--foooter_derecha-->
+      <div class="footer__info">
+        <p class="footer__ico-p">© 2024 Maki</p>
+        <p class="footer__ico-p">Politica de privacidad</p>
+        <p class="footer__ico-p">Accesibilidad</p>
+        <p class="footer__ico-p">Terminos y condiciones</p>
+      </div>
+      <!--foooter_derecha-->
+    </footer>
+    <!--FOOTER-->
+  </body>
+</html>
