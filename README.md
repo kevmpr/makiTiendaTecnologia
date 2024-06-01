@@ -36,6 +36,10 @@
     <h3>carrito.html</h3>
     <p>Podras ver todo lo seleccionado y finalizar tu compra si es que lo deseas</p>
   </li>
+  <li>
+    <h3>contacto.html</h3>
+    <p>Contaras con información para contactarnos e ir a nuestra sucursal</p>
+  </li>
 </ul>
 <br>
 <h2>Integrantes</h2>
