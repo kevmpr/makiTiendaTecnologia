@@ -4,6 +4,7 @@ const updInputId = document.getElementById('update-id')
 const updInputName = document.getElementById('update-name')
 const updInputPrice = document.getElementById('update-price')
 const updInputStock = document.getElementById('update-stock')
+const updInputCategory = document.getElementById('update-category')
 
 
 const modifyButtonHandleClick = (e) => {
@@ -13,7 +14,8 @@ const modifyButtonHandleClick = (e) => {
     if (updInputId.value.length === 0 ||
         updInputName.value.length === 0 ||
         updInputPrice.value.length === 0 ||
-        updInputStock.value.length === 0) {
+        updInputStock.value.length ===  0 ||
+        updInputCategory.value.length === 0) {
 
         return alert('Uno o más campos no se han completado')
     }
@@ -21,7 +23,8 @@ const modifyButtonHandleClick = (e) => {
     const body = {
         name: updInputName.value,
         price: parseFloat(updInputPrice.value),
-        stock: updInputStock.value
+        stock: updInputStock.value,
+        stock: updCategory.value
     }
 
     const url = './products/' + updInputId.value

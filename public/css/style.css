@@ -1605,3 +1605,29 @@ p:hover {
   }
 }
 /*---------------------------------------------------------COMPUTACION--MOVIL--TV----------------------------------------------------------------*/
+
+/*---------------------------------------------------------ADMIN----------------------------------------------------------------*/
+#admin{
+  background-color: var(--primario);
+  color: var(--blanco) !important;
+  padding: 1rem;
+  border-radius: 2.5rem;
+  font-size: 2rem;
+}
+
+#admin:hover {
+  animation: buttonAnimation 0.3s linear 1 forwards;
+}
+
+.adminContainer{
+  margin: 3rem;
+}
+
+.admin__section{
+  justify-content: center;
+}
+
+.section__title{
+  font-size: 30rem;
+}
+/*---------------------------------------------------------ADMIN----------------------------------------------------------------*/

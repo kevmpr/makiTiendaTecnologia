@@ -4,7 +4,7 @@ import { connection } from "../db/mysql.connection.js"
 
 const getProducts = async () => {
     try {
-        const query = `SELECT * FROM productos`
+        const query = `SELECT * FROM products`
         const [result] = await connection.promise().query(query)
 
         return result
@@ -16,10 +16,10 @@ const getProducts = async () => {
 
 const createProduct = async (product) => {
     try {
-        const { name, price, stock, image } = product
-        const fields = [name, price, stock, image]
+        const { name, price, stock, image, category } = product
+        const fields = [name, price, stock, image, category]
 
-        const query = `INSERT INTO productos VALUES (NULL,?,?,?,?)`
+        const query = `INSERT INTO products VALUES (NULL,?,?,?,?,?)`
         const [result] = await connection.promise().query(query, fields)
 
         return result.affectedRows > 0
@@ -31,10 +31,10 @@ const createProduct = async (product) => {
 
 const updateProduct = async (id, product) => {
     try {
-        const { name, price, stock } = product
-        const fields = [name, price, stock, id]
+        const { name, price, stock, category } = product
+        const fields = [name, price, stock, category, id]
 
-        const query = `UPDATE productos SET name=?,price=?,stock=? WHERE id=?`
+        const query = `UPDATE products SET name=?,price=?,stock=?,category=? WHERE id=?`
         const [result] = await connection.promise().query(query, fields)
 
         return result.affectedRows > 0 ? Error(0) : Error(3)
@@ -46,7 +46,7 @@ const updateProduct = async (id, product) => {
 
 const deleteProduct = async (id) => {
     try {
-        const query = `DELETE FROM productos WHERE id = ?`
+        const query = `DELETE FROM products WHERE id = ?`
         const [result] = await connection.promise().query(query, id)
 
         return result.affectedRows > 0 ? Error(0) : Error(3)
