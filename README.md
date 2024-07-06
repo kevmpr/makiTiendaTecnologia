@@ -20,3 +20,11 @@
   <li>Express</li>
 </ul>
 <br>
+<h2>Tablas creadas</h2>
+<ul>
+  <li>users</li>
+  <li>orders</li>
+  <li>ordersxproducts</li>
+  <li>products</li>
+</ul>
+<br>
