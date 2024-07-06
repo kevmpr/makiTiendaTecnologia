@@ -6,20 +6,20 @@ export default class ProductsDaoMysql extends Mysql {
     constructor() {
         super()
         this.table = 'products'
-        // this.#createTable()
+        this.#createTable()
     }
 
-    // #createTable() {
-    //     const query = `CREATE TABLE IF NOT EXISTS ${this.table}(
-    //         idProducts INT AUTO_INCREMENT PRIMARY KEY,
-    //             nameProducts VARCHAR(50) NOT NULL,
-    //             priceProducts FLOAT NOT NULL,
-    //             stockProducts INT NOT NULL,
-    //             imageProducts INT NULL,
-    //             categoryProducts ENUM('TV', 'Movil', 'Computacion')          
-    //     )`
-    //     this.connection.query(query)
-    // }
+    #createTable() {
+        const query = `CREATE TABLE IF NOT EXISTS ${this.table}(
+            idProducts INT AUTO_INCREMENT PRIMARY KEY,
+            nameProducts VARCHAR(50) NOT NULL,
+            priceProducts FLOAT NOT NULL,
+            stockProducts INT NOT NULL,
+            imageProducts INT NULL,
+            categoryProducts ENUM('TV', 'Movil', 'Computacion')          
+        );`
+        this.connection.query(query)
+    }
 
     async getAllProducts() {
         try {
@@ -49,7 +49,7 @@ export default class ProductsDaoMysql extends Mysql {
     }
 
     async addProduct(product) {
-        const { idProducts , nameProducts , priceProducts , stockProducts , imageProducts , categoryProducts} = product
+        const { idProducts , nameProducts , priceProducts , stockProducts , imageProducts , categoryProducts } = product
         const query = `INSERT INTO ${this.table} VALUES (?,?,?,?,?,?)`
         const [result] = await this.connection.promise().query(query, [idProducts, nameProducts, priceProducts, stockProducts, imageProducts, categoryProducts])
         return result

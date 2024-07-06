@@ -1,6 +1,7 @@
 import express from 'express'
 import UsersRoutes from '../routes/users.routes.js'
 import ProductsRoutes from '../routes/products.routes.js'
+import OrdersRoutes from '../routes/orders.routes.js'
 
 export default class Server {
 
@@ -17,8 +18,10 @@ export default class Server {
     static routes() {
         const usersRoutes = new UsersRoutes()
         const productsRoutes = new ProductsRoutes()
+        const ordersRoutes = new OrdersRoutes()
         Server.app.use('/users', usersRoutes.router)
         Server.app.use('/products', productsRoutes.router)
+        Server.app.use('/orders', ordersRoutes.router)
     }
 
 
