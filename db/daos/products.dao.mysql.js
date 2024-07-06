@@ -6,20 +6,28 @@ export default class ProductsDaoMysql extends Mysql {
     constructor() {
         super()
         this.table = 'products'
-        this.#createTable()
+        // this.#createTable()
     }
 
-    #createTable() {
-        const query = `CREATE TABLE IF NOT EXISTS ${this.table}(
-            idProducts INT AUTO_INCREMENT PRIMARY KEY,
-            nameProducts VARCHAR(50) NOT NULL,
-            priceProducts FLOAT NOT NULL,
-            stockProducts INT NOT NULL,
-            imageProducts INT NULL,
-            categoryProducts ENUM('TV', 'Movil', 'Computacion')          
-        );`
-        this.connection.query(query)
-    }
+    // #createTable() {
+    //     const query = `CREATE TABLE IF NOT EXISTS ${this.table}(
+    //         idProducts INT AUTO_INCREMENT PRIMARY KEY,
+    //         nameProducts VARCHAR(50) NOT NULL,
+    //         priceProducts FLOAT NOT NULL,
+    //         stockProducts INT NOT NULL,
+    //         imageProducts INT NULL,
+    //         categoryProducts ENUM('TV', 'Movil', 'Computacion')          
+    //     );
+        
+    //     INSERT INTO ${this.table} (nameProducts, priceProducts, stockProducts, imageProducts, categoryProducts)
+	//         VALUES ('Smart TV 55', 6580000, 89, 'img1', 'TV'), 
+	// 		    ('OLED 64 SAMSUNG', 87300000, 40, 'img2', 'TV'),
+    // 		    ('Samsung A52', 580000, 20, 'img1', 'Movil'), 
+	// 		    ('iPhone 15', 2500000, 10, 'img2', 'Movil'),
+    //             ('Notebook ASUS', 4200000, 50, 'img5', 'Computacion'),
+    //             ('Notebook MSI', 3700000, 38, 'img6', 'Computacion');`
+    //     this.connection.query(query)
+    // }
 
     async getAllProducts() {
         try {
