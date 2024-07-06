@@ -8,6 +8,7 @@
 <ul>
   <li>Adela</li>
   <li>Kevin</li>
+  <li>Juan</li>
 </ul>
 <br>
 <h2>Herramientas utilizadas</h2>
