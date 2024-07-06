@@ -1,24 +1,10 @@
-import mysql from 'mysql2'
-import config from '../config/mysql.config.js'
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
 
-export default class Mysql {
-
-    constructor() {
-        // this.connection = mysql.createPool(config)
-        this.connection = mysql.createConnection(config)
-        this.tryConnection()
-    }
-
-    tryConnection() {
-        this.connection.connect(err => {
-            err
-                ? console.error('No se pudo conectar a la DB')
-                : console.log('Conectado a la DB')
-        })
-    }
-}
-
-/*
+-- Base de datos: `sql_maki`
+-- --------------------------------------------------------
+-- Tabla `users`
 CREATE TABLE IF NOT EXISTS users(
     idUsers INT AUTO_INCREMENT PRIMARY KEY,
     nameUsers VARCHAR(50) NOT NULL,
@@ -30,6 +16,7 @@ CREATE TABLE IF NOT EXISTS users(
     imageUsers INT NULL
 );
 
+-- Datos para `users`
 INSERT INTO users (nameUsers, lastNameUsers, emailUsers, passwordUsers, genderUsers, telUsers, imageUsers)
 	VALUES	('Pablo', 'Ganes', 'pabloganes@gmail.com', '123', 'Masculino', 1140294816, 'img1'), 
 			('Gabriel', 'Medina', 'gabrielmedina@gmail.com', '123', 'Masculino', 1130292240, 'img2'),
@@ -38,6 +25,8 @@ INSERT INTO users (nameUsers, lastNameUsers, emailUsers, passwordUsers, genderUs
             ('Alex', 'Perez', 'alexperez@gmail.com', '123', 'Otro', 1123463728, 'img5'),
             ('Charly', 'Divino', 'charlydivino@gmail.com', '123', 'Otro', 1144509908, 'img6');
 
+-- --------------------------------------------------------
+-- Tabla `products`
 CREATE TABLE IF NOT EXISTS products(
 	idProducts INT AUTO_INCREMENT PRIMARY KEY,
     nameProducts VARCHAR(50) NOT NULL,
@@ -47,6 +36,7 @@ CREATE TABLE IF NOT EXISTS products(
     categoryProducts ENUM('TV', 'Movil', 'Computacion')
 );
 
+-- Datos para `products`
 INSERT INTO products (nameProducts, priceProducts, stockProducts, imageProducts, categoryProducts)
 	VALUES	('Smart TV 55', 6580000, 89, 'img1', 'TV'), 
 			('OLED 64 SAMSUNG', 87300000, 40, 'img2', 'TV'),
@@ -55,6 +45,8 @@ INSERT INTO products (nameProducts, priceProducts, stockProducts, imageProducts,
             ('Notebook ASUS', 4200000, 50, 'img5', 'Computacion'),
             ('Notebook MSI', 3700000, 38, 'img6', 'Computacion');
 
+-- --------------------------------------------------------
+-- Tabla `orders`
 CREATE TABLE IF NOT EXISTS orders(
 	idOrders INT AUTO_INCREMENT PRIMARY KEY,
 	idUsers INT,
@@ -63,6 +55,7 @@ CREATE TABLE IF NOT EXISTS orders(
     FOREIGN KEY (idUsers) REFERENCES users(idUsers)
 );
 
+-- Datos para `orders`
 INSERT INTO orders (idUsers, dateOrders, stateOrders) VALUES
 	(1, '04-07-24', 'Entregado'),
     (2, '04-07-24', 'Entregado'),
@@ -71,6 +64,8 @@ INSERT INTO orders (idUsers, dateOrders, stateOrders) VALUES
     (5, '04-07-24', 'Cancelado'),
     (6, '04-07-24', 'Cancelado');
 
+-- --------------------------------------------------------
+-- Tabla `ordersxproducts`
 CREATE TABLE IF NOT EXISTS ordersxproducts(
 	idOrders INT,
 	idProducts INT,
@@ -80,6 +75,7 @@ CREATE TABLE IF NOT EXISTS ordersxproducts(
     FOREIGN KEY (idProducts) REFERENCES products(idProducts)
 );
 
+-- Datos para `ordersxproducts`
 INSERT INTO ordersxproducts VALUES
 	(1, 1, 3, NULL),
     (1, 2, 4, NULL),
@@ -87,4 +83,5 @@ INSERT INTO ordersxproducts VALUES
     (2, 4, 21, NULL),
     (2, 5, 12, NULL),
     (3, 6, 1, NULL);
-*/
+
+-- --------------------------------------------------------
