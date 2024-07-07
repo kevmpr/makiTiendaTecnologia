@@ -3,7 +3,20 @@ START TRANSACTION;
 SET time_zone = "+00:00";
 
 -- Base de datos: `sql_maki`
--- --------------------------------------------------------
+-- 
+---------------------------------------------------------
+-- Tabla `rols`
+CREATE TABLE IF NOT EXISTS rols(
+    idRols INT PRIMARY KEY NOT NULL,
+	typeRols ENUM('Lector', 'Administrador')
+);
+
+-- Datos para `rols`
+INSERT INTO rols (idRols, typeRols)
+	VALUES	(1, 'Lector'), 
+			(2, 'Administrador');
+-- 
+---------------------------------------------------------
 -- Tabla `users`
 CREATE TABLE IF NOT EXISTS users(
     idUsers INT AUTO_INCREMENT PRIMARY KEY,
@@ -15,7 +28,7 @@ CREATE TABLE IF NOT EXISTS users(
     telUsers INT NULL,
     imageUsers INT NULL
 );
-
+-- 
 -- Datos para `users`
 INSERT INTO users (nameUsers, lastNameUsers, emailUsers, passwordUsers, genderUsers, telUsers, imageUsers)
 	VALUES	('Pablo', 'Ganes', 'pabloganes@gmail.com', '123', 'Masculino', 1140294816, 'img1'), 

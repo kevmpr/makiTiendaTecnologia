@@ -9,26 +9,6 @@ export default class OrdersxProductsDaoMysql extends Mysql {
         // this.#createTable()
     }
 
-    // #createTable() {
-    //     const query = `CREATE TABLE IF NOT EXISTS ${this.table}(
-    //         idOrders INT,
-	//         idProducts INT,
-    //         quantityOxp INT NULL,
-    //         priceOxp FLOAT NULL,
-    //         FOREIGN KEY (idOrders) REFERENCES orders(idOrders),
-    //         FOREIGN KEY (idProducts) REFERENCES products(idProducts)         
-    //     );
-        
-    //     INSERT INTO ${this.table} VALUES
-	//         (1, 1, 3, NULL),
-    //         (1, 2, 4, NULL),
-    //         (1, 3, 30, NULL),
-    //         (2, 4, 21, NULL),
-    //         (2, 5, 12, NULL),
-    //         (3, 6, 1, NULL);`
-    //     this.connection.query(query)
-    // }
-
     async getAllOrdersxProducts() {
         try {
             const query = `SELECT * FROM ${this.table}`

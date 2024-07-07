@@ -1,7 +1,8 @@
 export default class User {
 
-    constructor(idUsers, nameUsers, lastNameUsers, emailUsers, passwordUsers, genderUsers, telUsers, imageUsers) {
+    constructor(idUsers, idRols, nameUsers, lastNameUsers, emailUsers, passwordUsers, genderUsers, telUsers, imageUsers) {
         this.idUsers = idUsers
+        this.idRols = idRols
         this.nameUsers = nameUsers
         this.lastNameUsers = lastNameUsers
         this.emailUsers = emailUsers

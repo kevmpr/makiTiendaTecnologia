@@ -9,27 +9,6 @@ export default class OrdersDaoMysql extends Mysql {
         // this.#createTable()
     }
 
-    // #createTable() {
-    //     const query = `CREATE TABLE IF NOT EXISTS ${this.table}(
-	//         idOrders INT AUTO_INCREMENT PRIMARY KEY,
-	//         idUsers INT,
-    //         dateOrders VARCHAR(50) NULL,
-    //         stateOrders ENUM('Entregado', 'En espera', 'Cancelado'),
-    //         FOREIGN KEY (idUsers) REFERENCES users(idUsers)
-    //     );
-        
-    //     INSERT INTO ${this.table} (idUsers, dateOrders, stateOrders)
-    //         VALUES (1, '04-07-24', 'Entregado'),
-    //             (2, '04-07-24', 'Entregado'),
-    //             (3, '04-07-24', 'En espera'),
-    //             (4, '04-07-24', 'En espera'),
-    //             (5, '04-07-24', 'Cancelado'),
-    //             (6, '04-07-24', 'Cancelado');
-    //     `
-    //     this.connection.query(query)
-    // }
-
-
     async getAllOrders() {
         try {
             const query = `SELECT * FROM ${this.table}`
