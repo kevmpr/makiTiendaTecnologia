@@ -348,13 +348,14 @@
       <!--Titulo-->
 
       <!--Formulario-->
-      <form class="form" action="#">
+      <form class="form" action="./auth/login" method="post">
         <div class="input__container">
           <label for="email">Email</label>
           <input
             class="input"
             type="email"
-            id="email"
+            id="emailUsers"
+            name="emailUsers"
             autocomplete="email"
             
           >
@@ -362,11 +363,10 @@
 
         <div class="input__container">
           <label for="password">Contraseña</label>
-          <input class="input" type="password" id="password" >
+          <input class="input" type="password" id="passwordUsers" name="passwordUsers">
         </div>
-
         
-        <a href="./admin.html" class="admin" id="admin">Ingresar</a>
+        <button>Ingresar</button>
 
         <!--Esto debe ser un <button>, use un <a> para que tenga funcionalidad-->
       </form>

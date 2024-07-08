@@ -1,4 +1,5 @@
 import express from 'express'
+import AuthRoutes from '../routes/auth.routes.js'
 import RolsRoutes from '../routes/rols.routes.js'
 import UsersRoutes from '../routes/users.routes.js'
 import ProductsRoutes from '../routes/products.routes.js'
@@ -18,11 +19,14 @@ export default class Server {
 
 
     static routes() {
+        const authRoutes = new AuthRoutes()
         const rolsRoutes = new RolsRoutes()
         const usersRoutes = new UsersRoutes()
         const productsRoutes = new ProductsRoutes()
         const ordersRoutes = new OrdersRoutes()
         const ordersxproductsRoutes = new OrdersxProductsRoutes()
+
+        Server.app.use('/auth', authRoutes.router)
         Server.app.use('/rols', rolsRoutes.router)
         Server.app.use('/users', usersRoutes.router)
         Server.app.use('/products', productsRoutes.router)
