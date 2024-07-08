@@ -5,6 +5,7 @@ import UsersRoutes from '../routes/users.routes.js'
 import ProductsRoutes from '../routes/products.routes.js'
 import OrdersRoutes from '../routes/orders.routes.js'
 import OrdersxProductsRoutes from '../routes/ordersxproducts.routes.js'
+// import cookieParser from 'cookie-parser'
 
 export default class Server {
 
@@ -12,6 +13,7 @@ export default class Server {
 
 
     static middlewares() {
+        // Server.app.use(cookieParser(config.secretKey))
         Server.app.use(express.static('public'))
         Server.app.use(express.json())
         Server.app.use(express.urlencoded({ extended: true }))
