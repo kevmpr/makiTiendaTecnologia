@@ -18,10 +18,13 @@
   <li>JS</li>
   <li>NodeJS</li>
   <li>Express</li>
+  <li>jsonwebtoken</li>
+  <li>bcrypt</li>
 </ul>
 <br>
 <h2>Tablas creadas</h2>
 <ul>
+  <li>rols</li>
   <li>users</li>
   <li>orders</li>
   <li>ordersxproducts</li>
